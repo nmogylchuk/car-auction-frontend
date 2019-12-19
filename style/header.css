@@ -1,0 +1,83 @@
+/* header */
+
+
+.header__content {
+    background: #ffffff;
+    padding: 5px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none; 
+}
+
+.nav li a {
+    text-decoration: none;
+    color: #606060;
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    line-height: 3;
+    width: 250px;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+    color: #000000;
+    box-shadow: 1px 5px 10px -5px #000000;
+    background: #F6F6F6;
+}
+
+.nav li .nav__item-submenu {
+    position: absolute;
+    display: none;
+    list-style: none; 
+}
+
+.nav__item-submenu {
+    background: white;
+    position: relative;
+    border: 1px solid #e0e0e0;
+}
+
+.nav li:hover .nav__item-submenu {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    z-index: 5;
+}
+
+.bars {
+    background: #000000;
+    display: inline-block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    cursor: pointer;
+}
+
+.bars::before, .bars::after {
+    position: absolute;
+    content: "";
+    background: #000000;
+    display: inline-block;
+    height: 2px;
+    width: 18px;
+}
+
+.bars::before {
+    top: 5px;
+}
+
+.bars::after {
+    top: -5px;
+}
+
+

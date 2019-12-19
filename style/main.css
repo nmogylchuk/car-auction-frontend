@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,500,700&display=swap');
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    scr: url(../fonts/Roboto/Roboto-Bold.ttf) format("truetype");
+    scr: url(../fonts/Roboto/Roboto-Italic.ttf) format("truetype");
+    scr: url(../fonts/Roboto/Roboto-Light.ttf) format("truetype");
+    scr: url(../fonts/Roboto/Roboto-Medium.ttf) format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+
+/* about */
+
+.about {
+    padding: 30px;
+}
+
+.about__picture {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+#about__title {
+    font-size: 60px;
+    color: #000000;
+    text-align: center;
+    padding: 50px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    right: 10%;
+    z-index: 4;
+}
+
+.about__object {
+    position: absolute;
+    text-align: center;
+    padding: 50px;
+    top: 40%;
+    left: 10%;
+    right: 10%;
+    z-index: 4;
+}
+
+/* advantages */
+
+#advantages__title {
+    font-size: 50px;
+    color: #606060;
+    text-align: center;
+    padding: 30px;
+}
+
+.advantages {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.advantages__item {
+    background: #f5f5f5;
+    box-shadow: 1px 5px 10px -5px #000000;
+    width: 400px;
+    padding: 30px;
+    margin: 20px;
+    border: #000000;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 2;
+}
+
+.advantages__item:hover {
+    background: #ffcc00;
+    box-shadow: 1px 5px 10px -5px #000000;
+}
+
+.advantages__subtitle {
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.advantages__description {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*team */
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30p;
+    padding: 60px;
+    text-align: center;
+}
+
+#team__title {
+    font-size: 50px;
+    color: #606060;
+    text-align: center;
+    padding: 30px;
+}
+
+.team__photo {
+    border-radius: 50%;
+}
+
+.team__name {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.team__phone, .team__mail, .team__network {
+    text-align: center;
+    padding: 5px;
+    color: #ffcc00;
+    cursor: pointer;
+}
+
+.team__phone a, .team__mail a {
+    text-decoration: none;
+}
+
+.team__phone a:link, .team__mail a:link {
+    color: #000000;
+}
+
+.team__name:hover, .team__phone a:hover, .team__mail a:hover {
+    color: #FF1493;
+    box-shadow: 1px 5px 10px -5px #000000;
+}
+
+.team__phone li a:focus, .team__mail a:focus {
+    color: #ff0000;
+    box-shadow: 1px 5px 10px -5px #000000;
+}
+
+.team__phone li a:active, .team__mail a:active {
+    color: #ffcc00;
+    box-shadow: 1px 5px 10px -5px #000000;
+}
+
+.team__network .fa-linkedin, .team__network .fa-instagram, .team__network .fa-facebook  {
+    color: #FF1493; 
+    padding-right: 5px;
+}
+
+.team__network .fa-linkedin:hover, .team__network .fa-instagram:hover, .team__network .fa-facebook:hover {
+    color: #ffcc00;
+    font-size: 25px;
+}
+
+/* form */
+
+form {
+    max-width: 70%;
+    margin: 30px auto;
+    padding: 30px;
+    border: 1px solid #000000;
+    background: #ffcc00;
+    border-radius: 20px;
+}
+
+fieldset {
+    background: #F5F5DC;
+    padding: 1em 2em;
+    margin: 1em auto;
+    border-radius: 20px;
+    border: 1px solid #000000;
+}
+
+legend {
+    background: #ffe4c4;
+    padding: .5em;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 1em;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #000000;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input[type="submit"], input[type="reset"] {
+    background: #ADFF2F;
+    width: 100px;
+    border-radius: 20px;
+}
+
+/* slider */
+
+.slider {
+    /*display: flex;
+    flex-direction: row;*/
+    overflow: hidden;
+    /*width: 100%;*/
+    
+}
+
+.slider figure {
+    position: relative;
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    width: 500%;
+    left: 0;
+    margin: 0;
+    animation: 10s slider infinite;
+   
+}
+
+.slider figure img {
+    width: 20%;
+    float: left;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+/* map */
+
+.map {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    opacity: 0.5;
+}
+
+.map:hover {
+    opacity: 1; 
+    box-shadow: 1px 5px 10px -5px #000000;
+}
+
+.map iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/* footer */
+
+footer {
+    background: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    line-height: 6;
+}
+
+.footer__phone, .footer__mail, .footer__address .fa-map-marker-alt, .footer__network {
+    text-align: center;
+    padding: 5px;
+    color: #ffcc00;
+    cursor: pointer;
+}
+
+.footer__phone a, .footer__mail a {
+    text-decoration: none;
+}
+
+.footer__phone a:link, .footer__mail a:link {
+    color: #ffffff;;
+}
+
+.footer__phone a:hover, .footer__mail a:hover {
+    color: #FF1493;
+}
+
+.footer__phone li a:focus, .footer__mail a:focus {
+    color: #ff0000;
+}
+
+.footer__phone li a:active, .footer__mail a:active {
+    color: #ffcc00;
+}
+
+.footer__network .fa-linkedin, .footer__network .fa-instagram, .footer__network .fa-facebook  {
+    color: #ffcc00;
+    padding-right: 5px;
+}
+
+.footer__network .fa-linkedin:hover, .footer__network .fa-instagram:hover, .footer__network .fa-facebook:hover {
+    color: #FF1493; 
+    font-size: 25px;
+}
