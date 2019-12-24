@@ -70,7 +70,7 @@ body {
 }
 
 .advantages__item {
-    background: #f5f5f5;
+    background: #ffffff;
     box-shadow: 1px 5px 10px -5px #000000;
     width: 400px;
     padding: 30px;
@@ -82,7 +82,7 @@ body {
 }
 
 .advantages__item:hover {
-    background: #ffcc00;
+    background: #f3f6fd;
     box-shadow: 1px 5px 10px -5px #000000;
 }
 
@@ -116,10 +116,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background: #f5f5f5;
+    background: #ffffff;
     box-shadow: 1px 5px 10px -5px #000000;
     border: #000000;
     padding: 30px;
+    border-radius: 20px;
 }
 
 .auction__item-details {
@@ -135,8 +136,6 @@ body {
     line-height: 1.8;
  
 }
-
-
 
 
 /*team */
@@ -251,22 +250,15 @@ input[type="submit"], input[type="reset"] {
 /* slider */
 
 .slider {
-    /*display: flex;
-    flex-direction: row;*/
-    overflow: hidden;
-    /*width: 100%;*/
-    
+     overflow: hidden;
 }
 
 .slider figure {
     position: relative;
-    /*display: flex;*/
-    /*flex-direction: row;*/
     width: 500%;
     left: 0;
     margin: 0;
     animation: 20s slider infinite;
-   
 }
 
 .slider figure img {

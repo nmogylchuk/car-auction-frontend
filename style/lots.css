@@ -1,0 +1,72 @@
+/* Full size images */
+
+.lot__slider {
+  position: relative;
+  width: 40%;
+  margin: 0 10px;
+}
+
+.lotSliderMaxi {
+  display: none;
+}
+
+.lotSliderMaxi img {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+/* Previous and next buttons */
+
+.lot__slider-prev, .lot__slider-next {
+  cursor: pointer;
+  position: absolute;
+  top: 37%;
+  width: auto;
+  padding: 1.2em;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 0 10px 10px 0;
+}
+
+.lot__slider-next {
+  right: 0;
+  border-radius: 10px 0 0 10px;
+}
+
+.lot__slider-prev:hover, .lot__slider-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Numbers (1/6 ...) */
+
+.lot__slider-number {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 12px;
+}
+
+/* Mini size images */
+
+.lot__slider-mini {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.lot__slider-mini img {
+  width: 16%;
+}
+
+.lotSliderMiniItem {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.active, .lotSliderMiniItem:hover {
+  opacity: 1;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}

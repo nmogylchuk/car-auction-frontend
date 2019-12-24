@@ -4,7 +4,17 @@
 
 /* Medium Devices, Desktops */
 
-@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 1060px) {
+    .header__content {
+        justify-content: space-between;
+    }
+    .bars {
+        display: inline-block;
+    }
+    .nav {
+        display: none;
+    }
+}
 
 /* Small Devices, Tablets */
 
@@ -13,8 +23,10 @@
 /* Extra Small Devices, Phones */
 
 @media only screen and (max-width: 480px) {
+    * {
+        min-width: 480px;
+    }
     footer {
         flex-direction: column;
     }
 }
-
