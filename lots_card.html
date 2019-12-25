@@ -10,7 +10,6 @@
   <link rel="stylesheet" type="text/css" href="style/lots.css">
   <link rel="stylesheet" type="text/css" href="style/header.css">
   <link rel="stylesheet" type="text/css" href="style/media.css">
-
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 
 </head>
@@ -70,85 +69,154 @@
   </header>
 
   <main>
+
     <section>
 
-      <!-- Full size images -->
+      <div class="lot__information">
 
-      <div class="lot__slider">
+        <!-- Full size images -->
 
-        <div class="lotSliderMaxi">
-          <div class="lot__slider-number">1 / 6</div>
-          <img src="img/lots/lot_22122019/lot_221219_01.jpg" alt="lot__slider-maxi1">
+        <div class="lot__slider">
+
+          <div class="lotSliderMaxi">
+            <div class="lot__slider-number">1 / 6</div>
+            <img src="img/lots/lot_22122019/lot_221219_01.jpg" alt="lot__slider-maxi1">
+          </div>
+
+          <div class="lotSliderMaxi">
+            <p class="lot__slider-number">2 / 6</p>
+            <img src="img/lots/lot_22122019/lot_221219_02.jpg" alt="lot__slider-maxi2">
+          </div>
+
+          <div class="lotSliderMaxi">
+            <p class="lot__slider-number">3 / 6</p>
+            <img src="img/lots/lot_22122019/lot_221219_03.jpg" alt="lot__slider-maxi3">
+          </div>
+
+          <div class="lotSliderMaxi">
+            <p class="lot__slider-number">4 / 6</p>
+            <img src="img/lots/lot_22122019/lot_221219_04.jpg" alt="lot__slider-maxi4">
+          </div>
+
+          <div class="lotSliderMaxi">
+            <p class="lot__slider-number">5 / 6</p>
+            <img src="img/lots/lot_22122019/lot_221219_05.jpg" alt="lot__slider-maxi5">
+          </div>
+
+          <div class="lotSliderMaxi">
+            <p class="lot__slider-number">6 / 6</p>
+            <img src="img/lots/lot_22122019/lot_221219_06.jpg" alt="lot__slider-maxi6">
+          </div>
+
+          <!-- Previous and next buttons -->
+          <a class="lot__slider-prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="lot__slider-next" onclick="plusSlides(1)">&#10095;</a>
+
+          <!-- Mini size images -->
+
+          <div class="lot__slider-mini">
+            <img class="lotSliderMiniItem" src="img/lots/lot_22122019/lot_221219_01.jpg" alt="lot__slider-mini1"
+              onclick="currentSlide(1)">
+            <img class="lotSliderMiniItem" src="img/lots/lot_22122019/lot_221219_02.jpg" alt="lot__slider-mini2"
+              onclick="currentSlide(2)">
+            <img class="lotSliderMiniItem" src="img/lots/lot_22122019/lot_221219_03.jpg" alt="lot__slider-mini3"
+              onclick="currentSlide(3)">
+            <img class="lotSliderMiniItem" src="img/lots/lot_22122019/lot_221219_04.jpg" alt="lot__slider-mini4"
+              onclick="currentSlide(4)">
+            <img class="lotSliderMiniItem" src="img/lots/lot_22122019/lot_221219_05.jpg" alt="lot__slider-mini5"
+              onclick="currentSlide(5)">
+            <img class="lotSliderMiniItem" src="img/lots/lot_22122019/lot_221219_06.jpg" alt="lot__slider-mini6"
+              onclick="currentSlide(6)">
+          </div>
         </div>
 
-        <div class="lotSliderMaxi">
-          <p class="lot__slider-number">2 / 6</p>
-          <img src="img/lots/lot_22122019/lot_221219_02.jpg" alt="lot__slider-maxi2">
+        <div class="lot__details">
+          <h2 class="lot__model">Volvo XC90</h2>
+          <p id="lot__vin">YV1MZ32V0K2176720</p>
+          <div class="lot__details-item">
+            <p class="lot__start-price">9 000 EUR</p>
+            <p class="lot__item-year">2016</p>
+            <p class="lot__colour">Cиній</p>
+            <p class="lot-engine">2.0 Дизель</p>
+            <p class="lot-gearbox">Автомат</p>
+            <p class="lot-mileage">120 000 км</p>
+          </div>
         </div>
-
-        <div class="lotSliderMaxi">
-          <p class="lot__slider-number">3 / 6</p>
-          <img src="img/lots/lot_22122019/lot_221219_03.jpg" alt="lot__slider-maxi3">
-        </div>
-
-        <div class="lotSliderMaxi">
-          <p class="lot__slider-number">4 / 6</p>
-          <img src="img/lots/lot_22122019/lot_221219_04.jpg" alt="lot__slider-maxi4">
-        </div>
-
-        <div class="lotSliderMaxi">
-          <p class="lot__slider-number">5 / 6</p>
-          <img src="img/lots/lot_22122019/lot_221219_05.jpg" alt="lot__slider-maxi5">
-        </div>
-
-        <div class="lotSliderMaxi">
-          <p class="lot__slider-number">6 / 6</p>
-          <img src="img/lots/lot_22122019/lot_221219_06.jpg" alt="lot__slider-maxi6">
-        </div>
-
-        <!-- Previous and next buttons -->
-        <a class="lot__slider-prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="lot__slider-next" onclick="plusSlides(1)">&#10095;</a>
-
-        <!-- Mini size images -->
-
-        <div class="lot__slider-mini">
-          <img class="lotSliderMiniItem" src="img/lots/lot_22122019/lot_221219_01.jpg" alt="lot__slider-mini1"
-            onclick="currentSlide(1)">
-          <img class="lotSliderMiniItem" src="img/lots/lot_22122019/lot_221219_02.jpg" alt="lot__slider-mini2"
-            onclick="currentSlide(2)">
-          <img class="lotSliderMiniItem" src="img/lots/lot_22122019/lot_221219_03.jpg" alt="lot__slider-mini3"
-            onclick="currentSlide(3)">
-          <img class="lotSliderMiniItem" src="img/lots/lot_22122019/lot_221219_04.jpg" alt="lot__slider-mini4"
-            onclick="currentSlide(4)">
-          <img class="lotSliderMiniItem" src="img/lots/lot_22122019/lot_221219_05.jpg" alt="lot__slider-mini5"
-            onclick="currentSlide(5)">
-          <img class="lotSliderMiniItem" src="img/lots/lot_22122019/lot_221219_06.jpg" alt="lot__slider-mini6"
-            onclick="currentSlide(6)">
-        </div>
-
+      </div>
     </section>
 
-    <footer>
-      <p id=" footer__contacts">Copyright 2019</p>
-      <p class="footer__phone"><i class="fas fa-phone"></i><a href="tel:+380672244375" title="Call me!">+38 067
-          224 43
-          75</a></p>
-      <p class="footer__mail"><i class="far fa-envelope"></i> <a href="mailto:nataliia.mogylchuk@gmail.com"
-          title="Write me!" target="_blank">nataliia.mogylchuk@gmail.com</a></p>
-      <p class="footer__address"><i class="fas fa-map-marker-alt"></i>Ukraine, Kiev</p>
-      <div class="footer__network">
-        <a href="https://ua.linkedin.com/in/nataliia-mogylchuk-68328667" title="Visit my Linkedin page"
-          target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.facebook.com/public/Nataliia-Mogylchuk" title="Visit my Facebook page" target="_blank"><i
-            class="fab fa-facebook"></i></a>
-        <a href="http://www.autgram.com/u/natalka_mogylchuk" title="Visit my Instagram page" target="_blank"><i
-            class="fab fa-instagram"></i></a>
-      </div>
-    </footer>
+    <section>
 
-    <script type="text/javascript" src="script/lot.js"></script>
+      <!-- Lot description -->
+
+      <div class="lot__description">
+
+        <div class="lot__description-item">
+          <h2>Інтер`єр</h2>
+          <ul class="lot__interior">
+            <li>Шкіряне оздоблення керма</li>
+            <li>Механічне регулювання сидіння водія</li>
+            <li>Підігрів передніх сидінь</li>
+            <li>Електропідйомники</li>
+            <li>2-х зонний клімат контроль</li>
+          </ul>
+        </div>
+
+        <div class="lot__description-item">
+          <h2>Екстер`єр</h2>
+          <ul class="lot__exterior">
+            <li>Шкіряне оздоблення керма</li>
+            <li>Механічне регулювання сидіння водія</li>
+            <li>Підігрів передніх сидінь</li>
+            <li>Електропідйомники</li>
+            <li>2-х зонний клімат контроль</li>
+          </ul>
+        </div>
+
+        <div class="lot__description-item">
+          <h2>Безпека</h2>
+          <ul class="lot__safety">
+            <li>Адаптивний круїз-контроль</li>
+            <li>Датчик дощу</li>
+            <li>Датчики паркування</li>
+            <li>Електронна система курсової стійкості (ESP)</li>
+            <li>Антиблокувальна система (АBS) </li>
+          </ul>
+        </div>
+
+        <div class="lot__description-item">
+          <h2>Інше</h2>
+          <ul class="lot__other">
+            <li>17-дюймові легкосплавні диски</li>
+            <li>Неповнорозмірне запасне колесо</li>
+            <li>Гальма дискові задні</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <p id=" footer__contacts">Copyright 2019</p>
+    <p class="footer__phone"><i class="fas fa-phone"></i><a href="tel:+380672244375" title="Call me!">+38 067
+        224 43
+        75</a></p>
+    <p class="footer__mail"><i class="far fa-envelope"></i> <a href="mailto:nataliia.mogylchuk@gmail.com"
+        title="Write me!" target="_blank">nataliia.mogylchuk@gmail.com</a></p>
+    <p class="footer__address"><i class="fas fa-map-marker-alt"></i>Ukraine, Kiev</p>
+    <div class="footer__network">
+      <a href="https://ua.linkedin.com/in/nataliia-mogylchuk-68328667" title="Visit my Linkedin page" target="_blank"><i
+          class="fab fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/public/Nataliia-Mogylchuk" title="Visit my Facebook page" target="_blank"><i
+          class="fab fa-facebook"></i></a>
+      <a href="http://www.autgram.com/u/natalka_mogylchuk" title="Visit my Instagram page" target="_blank"><i
+          class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="script/lot.js"></script>
+  
 </body>
 
 </html>

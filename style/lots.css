@@ -1,3 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.lot__information {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* Full size images */
 
 .lot__slider {
@@ -69,4 +80,49 @@
 .active, .lotSliderMiniItem:hover {
   opacity: 1;
   border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+/* Lot details */
+
+.lot__details {
+  margin: 50px 20px;
+  text-transform: uppercase;
+}
+
+.model {
+  font-size: 50px;
+}
+
+.lot__details-item {
+  line-height: 2;
+  margin: 50px 0;
+}
+
+/* Lot description */
+
+.lot__description {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.lot__description-item {
+  background: #ffffff;
+  box-shadow: 1px 5px 10px -5px #000000;
+  width: 400px;
+  padding: 30px;
+  margin: 20px;
+  border: #000000;
+  border-radius: 20px;
+  line-height: 2;
+}
+
+.lot__description-item:hover {
+  background: #f3f6fd;
+  box-shadow: 1px 5px 10px -5px #000000;
+}
+
+.lot__description h2 {
+  text-align: center;
+  font-weight: bold;
 }
