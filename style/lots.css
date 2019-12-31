@@ -7,6 +7,7 @@
 .lot__information {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 /* Full size images */
@@ -85,7 +86,7 @@
 /* Lot details */
 
 .lot__details {
-  margin: 50px 20px;
+  margin: 50px 0;
   text-transform: uppercase;
 }
 
@@ -96,6 +97,17 @@
 .lot__details-item {
   line-height: 2;
   margin: 50px 0;
+}
+
+/* Bid price */
+
+.lot__bid-information {
+  margin: 50px 0;
+  text-transform: uppercase;
+}
+
+.lot__bid-start, .lot__bid-current, .lot__bid-fee {
+padding: 10px;
 }
 
 /* Lot description */
