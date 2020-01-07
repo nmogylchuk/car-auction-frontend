@@ -99,6 +99,11 @@
   margin: 50px 0;
 }
 
+.fas, .far {
+  padding-right: 15px;
+  width: 30px;
+}
+
 /* Bid price */
 
 .lot__bid-information {

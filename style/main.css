@@ -31,8 +31,8 @@ form.search input[type=text] {
     font-size: 18px;
     background: #f1f1f1;
     width: 80%;
-  }
-  
+}
+
 form.search button {
     padding: 8px;
     background: #00cd00;
@@ -41,11 +41,11 @@ form.search button {
     border: 1px solid grey;
     width: 20%;
     cursor: pointer;
-  }
-  
+}
+
 form.search button:hover {
     background: #006400;
-  }
+}
 
 /* advantages */
 
@@ -139,7 +139,13 @@ input[type="submit"], input[type="reset"] {
 
 input[type="submit"]:hover, input[type="reset"]:hover {
     background: #006400;
-  }
+}
+
+.fas, .far {
+    color: #606060;
+    padding-right: 15px;
+    width: 30px;
+}
 
 /*team */
 
@@ -172,7 +178,7 @@ input[type="submit"]:hover, input[type="reset"]:hover {
 .team__phone, .team__mail, .team__network {
     text-align: center;
     padding: 5px;
-    color: #ffcc00;
+    color: #337ab7;
     cursor: pointer;
 }
 
@@ -185,28 +191,28 @@ input[type="submit"]:hover, input[type="reset"]:hover {
 }
 
 .team__name:hover, .team__phone a:hover, .team__mail a:hover {
-    color: #FF1493;
     box-shadow: 1px 5px 10px -5px #000000;
+    cursor: pointer;
 }
 
 .team__phone li a:focus, .team__mail a:focus {
-    color: #ff0000;
+    color: #606060;
     box-shadow: 1px 5px 10px -5px #000000;
 }
 
 .team__phone li a:active, .team__mail a:active {
-    color: #ffcc00;
+    color: #337ab7;
     box-shadow: 1px 5px 10px -5px #000000;
 }
 
 .team__network .fa-linkedin, .team__network .fa-instagram, .team__network .fa-facebook {
-    color: #FF1493;
-    padding-right: 5px;
+    color: #606060;
+    font-size: 25px;
 }
 
 .team__network .fa-linkedin:hover, .team__network .fa-instagram:hover, .team__network .fa-facebook:hover {
-    color: #cccccc;
-    font-size: 25px;
+    color: #000000;
+    font-size: 30px;
 }
 
 /* form  */
@@ -342,11 +348,12 @@ footer {
 
 .footer__phone a:link, .footer__mail a:link {
     color: #ffffff;
-    ;
 }
 
 .footer__phone a:hover, .footer__mail a:hover {
-    color: #FF1493;
+    color: #000000;
+    ;
+    cursor: pointer;
 }
 
 .footer__phone li a:focus, .footer__mail a:focus {
@@ -367,11 +374,21 @@ footer {
 }
 
 .footer__network .fa-linkedin, .footer__network .fa-instagram, .footer__network .fa-facebook {
-    color: #ffcc00;
-    padding: 0 15px;
+    color: #606060;
+    padding: 0 10px;
 }
 
 .footer__network .fa-linkedin:hover, .footer__network .fa-instagram:hover, .footer__network .fa-facebook:hover {
-    color: #FF1493;
+    color: #000000;
+    font-size: 30px;
+}
+
+.footer__network .fa-linkedin:focus, .footer__network .fa-instagram:focus, .footer__network .fa-facebook:focus {
+    color: #000000;
+    font-size: 30px;
+}
+
+.footer__network .fa-linkedin:active, .footer__network .fa-instagram:active, .footer__network .fa-facebook:active {
+    color: #000000;
     font-size: 30px;
 }
