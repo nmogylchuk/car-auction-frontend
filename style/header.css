@@ -16,7 +16,7 @@ header {
 }
 
 .header__logo-container img {
-
+width: 100px;
 }
 
 .nav {
@@ -43,7 +43,7 @@ nav li a:hover {
 
  .nav li.devider {
     width: 1px;
-    background: #606060;
+    background: #e0e0e0;
 }
 
 .nav li a:last-child::after {

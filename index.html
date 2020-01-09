@@ -20,13 +20,14 @@
     <header>
         <div class="header__content">
             <a href="#" class="header__logo-container">
-                <img class="header__logo" src="img/logo.png" alt="Logo" width="150px" height="60px">
+                <img class="header__logo" src="img/logo.png" alt="Logo">
             </a>
 
             <nav>
                 <ul class="nav">
+
                     <li class="nav__item">
-                        <a href="#auction">Поточні аукціони</a>
+                        <a href="#advantages__title">Наші переваги</a>
                         <ul class="nav__item-submenu">
                             <li><a href="#" class="nav__item-link">Submenu1</a></li>
                             <li><a href="#" class="nav__item-link">Submenu1</a></li>
@@ -36,7 +37,7 @@
                     <li class="devider"></li>
 
                     <li class="nav__item">
-                        <a href="#advantages">Наші переваги</a>
+                        <a href="#auction__title">Поточні аукціони</a>
                         <ul class="nav__item-submenu">
                             <li><a href="#" class="nav__item-link">Submenu1</a></li>
                             <li><a href="#" class="nav__item-link">Submenu1</a></li>
@@ -46,7 +47,7 @@
                     <li class="devider"></li>
 
                     <li class="nav__item">
-                        <a href="#clients">Наші клієнти</a>
+                        <a href="#team__title">Наша команда</a>
                         <ul class="nav__item-submenu">
                             <li><a href="#" class="nav__item-link">Submenu1</a></li>
                             <li><a href="#" class="nav__item-link">Submenu1</a></li>
@@ -56,11 +57,19 @@
                     <li class="devider"></li>
 
                     <li class="nav__item">
-                        <a href="#contacts">Контакти</a>
+                        <a href="#partner__title">Наші партнери</a>
                         <ul class="nav__item-submenu">
                             <li><a href="#" class="nav__item-link">Submenu1</a></li>
                             <li><a href="#" class="nav__item-link">Submenu1</a></li>
                             <li><a href="#" class="nav__item-link">Submenu1</a></li>
+                        </ul>
+                    </li>
+                    <li class="devider"></li>
+
+                    <li class="nav__item">
+                        <a href="#footer__contacts">Контакти</a>
+                        <ul class="nav__item-submenu">
+                            <li><a href="#map" class="nav__item-link">Як нас знайти?</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -77,7 +86,7 @@
 
         <!-- Search button -->
 
-        <form class="search" action="#">
+        <form class="search" action="#" method="get">
 
             <select id="brand" name="brand" size="3" multiple>
                 <option value="acura">Acura</option>
@@ -160,7 +169,7 @@
 <!-- Advantages -->
 
         <section>
-            <h2 id=" advantages__title">Наші переваги</h2>
+            <h2 id="advantages__title">Наші переваги</h2>
                         <p class="advantages__details"> СAR - це зручна та проста у користуванні веб-платформа з
                             головним офісом у м.Київ, що надає онлайн доступ до оптових авто аукціонів та дилерів США та
                             Канади для клієнтів з більш ніж 120 країн світу протягом останніх 10 років.</p>
@@ -234,123 +243,201 @@
             <h2 id="auction__title">Поточні аукціони</h2>
             <div class="auction__lots">
                 <div class="auction__item">
-                    <a href=""></a>
                     <div class="auction__item-details">
                         <img class="auction__item-photo" src="img/auction_ford_edge.jpg" alt="auction_item"
                             title="Ford Edge">
-                    </div>
-                    <div class="auction__item-description">
-                        <h2 class="auction__item-title"><i>Ford Edge</i></h2>
-                        <p class="lot__start-price"><i class="fas fa-money-bill"></i>9 000 EUR</p>
-                        <p class="lot__item-year"><i class="far fa-calendar-times"></i>2016</p>
-                        <p class="lot__colour"><i class="fas fa-paint-brush"></i>Cиній</p>
-                        <p class="lot-engine"><i class="fas fa-gas-pump"></i>2.0 Дизель</p>
-                        <p class="lot-gearbox"><i class="fas fa-cog"></i>Автомат</p>
-                        <p class="lot-mileage"><i class="fas fa-tachometer-alt"></i>120 000 км</p>
-                        <input class="auction__item-details" type="submit" value="Деталі"
-                            onclick="window.location.href = 'lots_card.html';">
+                        <div class="auction__item-description">
+                            <h2 class="auction__item-title"><i>Ford Edge</i></h2>
+                            <p class="lot__start-price"><i class="fas fa-money-bill"></i>9 000 EUR</p>
+                            <p class="lot__item-year"><i class="far fa-calendar-times"></i>2016</p>
+                            <p class="lot__colour"><i class="fas fa-paint-brush"></i>Cиній</p>
+                            <p class="lot-engine"><i class="fas fa-gas-pump"></i>2.0 Дизель</p>
+                            <p class="lot-gearbox"><i class="fas fa-cog"></i>Автомат</p>
+                            <p class="lot-mileage"><i class="fas fa-tachometer-alt"></i>120 000 км</p>
+                            <input class="auction__item-details" type="submit" value="Деталі"
+                                onclick="window.location.href = 'lots_card.html';">
+                        </div>
                     </div>
                 </div>
 
                 <div class="auction__item">
-                    <a href=""></a>
                     <div class="auction__item-details">
                         <img class="auction__item-photo" src="img/auction_ford_edge.jpg" alt="auction_item"
                             title="Ford Edge">
-                    </div>
-                    <div class="auction__item-description">
-                        <h2 class="auction__item-title"><i>Ford Edge</i></h2>
-                        <p class="lot__start-price"><i class="fas fa-money-bill"></i>9 000 EUR</p>
-                        <p class="lot__item-year"><i class="far fa-calendar-times"></i>2016</p>
-                        <p class="lot__colour"><i class="fas fa-paint-brush"></i>Cиній</p>
-                        <p class="lot-engine"><i class="fas fa-gas-pump"></i>2.0 Дизель</p>
-                        <p class="lot-gearbox"><i class="fas fa-cog"></i>Автомат</p>
-                        <p class="lot-mileage"><i class="fas fa-tachometer-alt"></i>120 000 км</p>
-                        <input class="auction__item-details" type="submit" value="Деталі"
-                            onclick="window.location.href = 'lots_card.html';">
+                        <div class="auction__item-description">
+                            <h2 class="auction__item-title"><i>Ford Edge</i></h2>
+                            <p class="lot__start-price"><i class="fas fa-money-bill"></i>9 000 EUR</p>
+                            <p class="lot__item-year"><i class="far fa-calendar-times"></i>2016</p>
+                            <p class="lot__colour"><i class="fas fa-paint-brush"></i>Cиній</p>
+                            <p class="lot-engine"><i class="fas fa-gas-pump"></i>2.0 Дизель</p>
+                            <p class="lot-gearbox"><i class="fas fa-cog"></i>Автомат</p>
+                            <p class="lot-mileage"><i class="fas fa-tachometer-alt"></i>120 000 км</p>
+                            <input class="auction__item-details" type="submit" value="Деталі"
+                                onclick="window.location.href = 'lots_card.html';">
+                        </div>
                     </div>
                 </div>
 
                 <div class="auction__item">
-                    <a href=""></a>
                     <div class="auction__item-details">
                         <img class="auction__item-photo" src="img/auction_ford_edge.jpg" alt="auction_item"
                             title="Ford Edge">
-                    </div>
-                    <div class="auction__item-description">
-                        <h2 class="auction__item-title"><i>Ford Edge</i></h2>
-                        <p class="lot__start-price"><i class="fas fa-money-bill"></i>9 000 EUR</p>
-                        <p class="lot__item-year"><i class="far fa-calendar-times"></i>2016</p>
-                        <p class="lot__colour"><i class="fas fa-paint-brush"></i>Cиній</p>
-                        <p class="lot-engine"><i class="fas fa-gas-pump"></i>2.0 Дизель</p>
-                        <p class="lot-gearbox"><i class="fas fa-cog"></i>Автомат</p>
-                        <p class="lot-mileage"><i class="fas fa-tachometer-alt"></i>120 000 км</p>
-                        <input class="auction__item-details" type="submit" value="Деталі"
-                            onclick="window.location.href = 'lots_card.html';">
+                        <div class="auction__item-description">
+                            <h2 class="auction__item-title"><i>Ford Edge</i></h2>
+                            <p class="lot__start-price"><i class="fas fa-money-bill"></i>9 000 EUR</p>
+                            <p class="lot__item-year"><i class="far fa-calendar-times"></i>2016</p>
+                            <p class="lot__colour"><i class="fas fa-paint-brush"></i>Cиній</p>
+                            <p class="lot-engine"><i class="fas fa-gas-pump"></i>2.0 Дизель</p>
+                            <p class="lot-gearbox"><i class="fas fa-cog"></i>Автомат</p>
+                            <p class="lot-mileage"><i class="fas fa-tachometer-alt"></i>120 000 км</p>
+                            <input class="auction__item-details" type="submit" value="Деталі"
+                                onclick="window.location.href = 'lots_card.html';">
+                        </div>
                     </div>
                 </div>
 
                 <div class="auction__item">
-                    <a href=""></a>
                     <div class="auction__item-details">
                         <img class="auction__item-photo" src="img/auction_ford_edge.jpg" alt="auction_item"
                             title="Ford Edge">
-                    </div>
-                    <div class="auction__item-description">
-                        <h2 class="auction__item-title"><i>Ford Edge</i></h2>
-                        <p class="lot__start-price"><i class="fas fa-money-bill"></i>9 000 EUR</p>
-                        <p class="lot__item-year"><i class="far fa-calendar-times"></i>2016</p>
-                        <p class="lot__colour"><i class="fas fa-paint-brush"></i>Cиній</p>
-                        <p class="lot-engine"><i class="fas fa-gas-pump"></i>2.0 Дизель</p>
-                        <p class="lot-gearbox"><i class="fas fa-cog"></i>Автомат</p>
-                        <p class="lot-mileage"><i class="fas fa-tachometer-alt"></i>120 000 км</p>
-                        <input class="auction__item-details" type="submit" value="Деталі"
-                            onclick="window.location.href = 'lots_card.html';">
+                        <div class="auction__item-description">
+                            <h2 class="auction__item-title"><i>Ford Edge</i></h2>
+                            <p class="lot__start-price"><i class="fas fa-money-bill"></i>9 000 EUR</p>
+                            <p class="lot__item-year"><i class="far fa-calendar-times"></i>2016</p>
+                            <p class="lot__colour"><i class="fas fa-paint-brush"></i>Cиній</p>
+                            <p class="lot-engine"><i class="fas fa-gas-pump"></i>2.0 Дизель</p>
+                            <p class="lot-gearbox"><i class="fas fa-cog"></i>Автомат</p>
+                            <p class="lot-mileage"><i class="fas fa-tachometer-alt"></i>120 000 км</p>
+                            <input class="auction__item-details" type="submit" value="Деталі"
+                                onclick="window.location.href = 'lots_card.html';">
+                        </div>
                     </div>
                 </div>
 
                 <div class="auction__item">
-                    <a href=""></a>
                     <div class="auction__item-details">
                         <img class="auction__item-photo" src="img/auction_ford_edge.jpg" alt="auction_item"
                             title="Ford Edge">
-                    </div>
-                    <div class="auction__item-description">
-                        <h2 class="auction__item-title"><i>Ford Edge</i></h2>
-                        <p class="lot__start-price"><i class="fas fa-money-bill"></i>9 000 EUR</p>
-                        <p class="lot__item-year"><i class="far fa-calendar-times"></i>2016</p>
-                        <p class="lot__colour"><i class="fas fa-paint-brush"></i>Cиній</p>
-                        <p class="lot-engine"><i class="fas fa-gas-pump"></i>2.0 Дизель</p>
-                        <p class="lot-gearbox"><i class="fas fa-cog"></i>Автомат</p>
-                        <p class="lot-mileage"><i class="fas fa-tachometer-alt"></i>120 000 км</p>
-                        <input class="auction__item-details" type="submit" value="Деталі"
-                            onclick="window.location.href = 'lots_card.html';">
+                        <div class="auction__item-description">
+                            <h2 class="auction__item-title"><i>Ford Edge</i></h2>
+                            <p class="lot__start-price"><i class="fas fa-money-bill"></i>9 000 EUR</p>
+                            <p class="lot__item-year"><i class="far fa-calendar-times"></i>2016</p>
+                            <p class="lot__colour"><i class="fas fa-paint-brush"></i>Cиній</p>
+                            <p class="lot-engine"><i class="fas fa-gas-pump"></i>2.0 Дизель</p>
+                            <p class="lot-gearbox"><i class="fas fa-cog"></i>Автомат</p>
+                            <p class="lot-mileage"><i class="fas fa-tachometer-alt"></i>120 000 км</p>
+                            <input class="auction__item-details" type="submit" value="Деталі"
+                                onclick="window.location.href = 'lots_card.html';">
+                        </div>
                     </div>
                 </div>
 
                 <div class="auction__item">
-                    <a href=""></a>
                     <div class="auction__item-details">
                         <img class="auction__item-photo" src="img/auction_ford_edge.jpg" alt="auction_item"
                             title="Ford Edge">
-                    </div>
-                    <div class="auction__item-description">
-                        <h2 class="auction__item-title"><i>Ford Edge</i></h2>
-                        <p class="lot__start-price"><i class="fas fa-money-bill"></i>9 000 EUR</p>
-                        <p class="lot__item-year"><i class="far fa-calendar-times"></i>2016</p>
-                        <p class="lot__colour"><i class="fas fa-paint-brush"></i>Cиній</p>
-                        <p class="lot-engine"><i class="fas fa-gas-pump"></i>2.0 Дизель</p>
-                        <p class="lot-gearbox"><i class="fas fa-cog"></i>Автомат</p>
-                        <p class="lot-mileage"><i class="fas fa-tachometer-alt"></i>120 000 км</p>
-                        <input class="auction__item-details" type="submit" value="Деталі"
-                            onclick="window.location.href = 'lots_card.html';">
+                        <div class="auction__item-description">
+                            <h2 class="auction__item-title"><i>Ford Edge</i></h2>
+                            <p class="lot__start-price"><i class="fas fa-money-bill"></i>9 000 EUR</p>
+                            <p class="lot__item-year"><i class="far fa-calendar-times"></i>2016</p>
+                            <p class="lot__colour"><i class="fas fa-paint-brush"></i>Cиній</p>
+                            <p class="lot-engine"><i class="fas fa-gas-pump"></i>2.0 Дизель</p>
+                            <p class="lot-gearbox"><i class="fas fa-cog"></i>Автомат</p>
+                            <p class="lot-mileage"><i class="fas fa-tachometer-alt"></i>120 000 км</p>
+                            <input class="auction__item-details" type="submit" value="Деталі"
+                                onclick="window.location.href = 'lots_card.html';">
+                        </div>
                     </div>
                 </div>
             </div>
-
         </section>
 
-        <!-- Partnerts -->
+        <!-- Team -->
+
+        <section>
+            <h2 id="team__title">Наша команда</h2>
+            <div class="team">
+                <div class="team__item">
+                    <figure>
+                        <img class="team__photo" src="./img/team_item1.jpg" alt="person1">
+                        <figcaption class="team__name">Євген Маслюков</figcaption>
+                    </figure>
+
+                    <p class="team__phone">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+380672244375" title="Call me!">+38 067 224 43 75</a>
+                    </p>
+                    <p class="team__mail">
+                        <i class="far fa-envelope"></i>
+                        <a href="mailto:nataliia.mogylchuk@gmail.com" title="Write me!"
+                            target="_blank">nataliia.mogylchuk@gmail.com</a>
+                    </p>
+
+                    <div class="team__network">
+                        <a href="https://ua.linkedin.com/in/nataliia-mogylchuk-68328667" title="Visit my Linkedin page"
+                            target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/public/Nataliia-Mogylchuk" title="Visit my Facebook page"
+                            target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="http://www.autgram.com/u/natalka_mogylchuk" title="Visit my Instagram page"
+                            target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="team__item">
+                    <figure>
+                        <img class="team__photo" src="./img/team_item2.jpg" alt="person1">
+                        <figcaption class="team__name">Анна Казміренко</figcaption>
+                    </figure>
+
+                    <p class="team__phone">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+380672244375" title="Call me!">+38 067 224 43 75</a>
+                    </p>
+                    <p class="team__mail">
+                        <i class="far fa-envelope"></i>
+                        <a href="mailto:nataliia.mogylchuk@gmail.com" title="Write me!"
+                            target="_blank">nataliia.mogylchuk@gmail.com</a>
+                    </p>
+
+                    <div class="team__network">
+                        <a href="https://ua.linkedin.com/in/nataliia-mogylchuk-68328667" title="Visit my Linkedin page"
+                            target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/public/Nataliia-Mogylchuk" title="Visit my Facebook page"
+                            target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="http://www.autgram.com/u/natalka_mogylchuk" title="Visit my Instagram page"
+                            target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="team__item">
+                    <figure>
+                        <img class="team__photo" src="./img/team_item3.jpg" alt="person1">
+                        <figcaption class="team__name">Борис Грінченко</figcaption>
+                    </figure>
+
+                    <p class="team__phone">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+380672244375" title="Call me!">+38 067 224 43 75</a>
+                    </p>
+                    <p class="team__mail">
+                        <i class="far fa-envelope"></i>
+                        <a href="mailto:nataliia.mogylchuk@gmail.com" title="Write me!"
+                            target="_blank">nataliia.mogylchuk@gmail.com</a>
+                    </p>
+
+                    <div class="team__network">
+                        <a href="https://ua.linkedin.com/in/nataliia-mogylchuk-68328667" title="Visit my Linkedin page"
+                            target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/public/Nataliia-Mogylchuk" title="Visit my Facebook page"
+                            target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="http://www.autgram.com/u/natalka_mogylchuk" title="Visit my Instagram page"
+                            target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+     <!-- Partnerts -->
 
         <section>
             <h2 id="partner__title">Наші партнери</h2>
@@ -373,184 +460,95 @@
                 <div class="partner__logo-item">
                     <img class="partner__logo-item5" src="img/partners/partner_hertz.png" alt="partner_logo-item5">
                 </div>
-                <div class="partner__logo-item">
-                    <img class="partner__logo-item5" src="img/partners/partner_alamo.png" alt="partner_logo-item5">
-                </div>
-
             </div>
+        </section>
 
-            <!-- Contact information -->
+         <!-- Contact information -->
 
-            <form class="contact" action="#" method="post" target="_blank">
-                <fieldset>
-                    <legend>Форма зворотнього зв`язку</legend>
-                    <label for="firstname">Ваше ім`я</label>
-                    <input id="firstname" type="text" name="firstname" pattern="[A-Za-z]{1,32}"
-                        title=" Your name should only contain upper and lowercase letters (e.g. Ivan)"
-                        placeholder="Put your name" size="30" maxlength="100" required>
+         <form class="contact" action="#" method="post" target="_blank">
+            <fieldset>
+                <legend>Форма зворотнього зв`язку</legend>
+                <label for="firstname">Ваше ім`я</label>
+                <input id="firstname" type="text" name="firstname" pattern="[A-Za-z]{1,32}"
+                    title=" Your name should only contain upper and lowercase letters (e.g. Ivan)"
+                    placeholder="Put your name" size="30" maxlength="100" required>
 
-                    <label for="lastname">Ваше прізвище</label>
-                    <input id="lastname" type="text" name="lastname" pattern="[A-Za-z]{1,32}"
-                        title=" Your last name should only contain upper and lowercase letters (e.g. Ivanov)"
-                        placeholder=" Put your last name" required>
+                <label for="lastname">Ваше прізвище</label>
+                <input id="lastname" type="text" name="lastname" pattern="[A-Za-z]{1,32}"
+                    title=" Your last name should only contain upper and lowercase letters (e.g. Ivanov)"
+                    placeholder=" Put your last name" required>
 
-                    <label for="female">Жін</label>
-                    <input id="female" type="radio" name="gender" value="female" checked>
+                <label for="female">Жін</label>
+                <input id="female" type="radio" name="gender" value="female" checked>
 
-                    <label for="male">Чол</label>
-                    <input id="male" type="radio" name="gender" value="female">
-                    <br />
-                    <label for="mail">E-mail</label>
-                    <input id="mail" type="email" title="Your e-mail should contain @ (e.g. ivanov@gmail.com)"
-                        placeholder="Put your e-mail" required>
+                <label for="male">Чол</label>
+                <input id="male" type="radio" name="gender" value="female">
+                <br />
+                <label for="mail">E-mail</label>
+                <input id="mail" type="email" title="Your e-mail should contain @ (e.g. ivanov@gmail.com)"
+                    placeholder="Put your e-mail" required>
 
-                    <label for="phone">Телефон</label>
-                    <input id="phone" type="tel" pattern="^\+38 \d{3}-\d{3}-\d{2}-\d{2}"
-                        title="Your phone should only contain numbers and format +38 000-000-00-00)"
-                        placeholder="Put your phone" required>
+                <label for="phone">Телефон</label>
+                <input id="phone" type="tel" pattern="^\+38 \d{3}-\d{3}-\d{2}-\d{2}"
+                    title="Your phone should only contain numbers and format +38 000-000-00-00)"
+                    placeholder="Put your phone" required>
 
-                    <label for="networks">Як Ви нас знайшли?</label>
-                    <input type="text" name="networks" id="networks" list="networks_list">
+                <label for="networks">Як Ви нас знайшли?</label>
+                <input type="text" name="networks" id="networks" list="networks_list">
 
-                    <datalist id="networks_list">
-                        <option value="website"></option>
-                        <option value="facebook"></option>
-                        <option value="instagram"></option>
-                        <option value="friends recommendation"></option>
-                    </datalist>
+                <datalist id="networks_list">
+                    <option value="website"></option>
+                    <option value="facebook"></option>
+                    <option value="instagram"></option>
+                    <option value="friends recommendation"></option>
+                </datalist>
 
-                    <label for="message">Ваш коментар</label>
-                    <textarea id="message" name="message" rows="5" cols="30" maxlength="1000"></textarea>
+                <label for="message">Ваш коментар</label>
+                <textarea id="message" name="message" rows="5" cols="30" maxlength="1000"></textarea>
 
-                    <label for="data">Я погоджуюся на обробку персональних даних.</label>
-                    <input id="data" type="checkbox" name="personal-data" checked required>
-                </fieldset>
+                <label for="data">Я погоджуюся на обробку персональних даних.</label>
+                <input id="data" type="checkbox" name="personal-data" checked required>
+            </fieldset>
 
-                <input type="submit" value="Підтвердити">
-                <input type="reset" value="Скинути">
-            </form>
+            <input type="submit" value="Підтвердити">
+            <input type="reset" value="Скинути">
+        </form>
 
 
-            <!-- Team -->
+        <!-- Map -->
 
-            <section>
-                <h2 id="team__title">Наша команда</h2>
-                <div class="team">
-                    <div class="team__item">
-                        <figure>
-                            <img class="team__photo" src="./img/team_item1.jpg" alt="person1">
-                            <figcaption class="team__name">Євген Маслюков</figcaption>
-                        </figure>
-
-                        <p class="team__phone">
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:+380672244375" title="Call me!">+38 067 224 43 75</a>
-                        </p>
-                        <p class="team__mail">
-                            <i class="far fa-envelope"></i>
-                            <a href="mailto:nataliia.mogylchuk@gmail.com" title="Write me!"
-                                target="_blank">nataliia.mogylchuk@gmail.com</a>
-                        </p>
-
-                        <div class="team__network">
-                            <a href="https://ua.linkedin.com/in/nataliia-mogylchuk-68328667"
-                                title="Visit my Linkedin page" target="_blank"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://www.facebook.com/public/Nataliia-Mogylchuk" title="Visit my Facebook page"
-                                target="_blank"><i class="fab fa-facebook"></i></a>
-                            <a href="http://www.autgram.com/u/natalka_mogylchuk" title="Visit my Instagram page"
-                                target="_blank"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="team__item">
-                        <figure>
-                            <img class="team__photo" src="./img/team_item2.jpg" alt="person1">
-                            <figcaption class="team__name">Анна Казміренко</figcaption>
-                        </figure>
-
-                        <p class="team__phone">
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:+380672244375" title="Call me!">+38 067 224 43 75</a>
-                        </p>
-                        <p class="team__mail">
-                            <i class="far fa-envelope"></i>
-                            <a href="mailto:nataliia.mogylchuk@gmail.com" title="Write me!"
-                                target="_blank">nataliia.mogylchuk@gmail.com</a>
-                        </p>
-
-                        <div class="team__network">
-                            <a href="https://ua.linkedin.com/in/nataliia-mogylchuk-68328667"
-                                title="Visit my Linkedin page" target="_blank"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://www.facebook.com/public/Nataliia-Mogylchuk" title="Visit my Facebook page"
-                                target="_blank"><i class="fab fa-facebook"></i></a>
-                            <a href="http://www.autgram.com/u/natalka_mogylchuk" title="Visit my Instagram page"
-                                target="_blank"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="team__item">
-                        <figure>
-                            <img class="team__photo" src="./img/team_item3.jpg" alt="person1">
-                            <figcaption class="team__name">Борис Грінченко</figcaption>
-                        </figure>
-
-                        <p class="team__phone">
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:+380672244375" title="Call me!">+38 067 224 43 75</a>
-                        </p>
-                        <p class="team__mail">
-                            <i class="far fa-envelope"></i>
-                            <a href="mailto:nataliia.mogylchuk@gmail.com" title="Write me!"
-                                target="_blank">nataliia.mogylchuk@gmail.com</a>
-                        </p>
-
-                        <div class="team__network">
-                            <a href="https://ua.linkedin.com/in/nataliia-mogylchuk-68328667"
-                                title="Visit my Linkedin page" target="_blank"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://www.facebook.com/public/Nataliia-Mogylchuk" title="Visit my Facebook page"
-                                target="_blank"><i class="fab fa-facebook"></i></a>
-                            <a href="http://www.autgram.com/u/natalka_mogylchuk" title="Visit my Instagram page"
-                                target="_blank"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Map -->
-
-            <section class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.1905986436523!2d30.619127916026933!3d50.437550379473635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c568143feba1%3A0x81deed3e317d95af!2z0JrQvtC80YTQvtGA0YIg0KLQsNGD0L0!5e0!3m2!1sru!2sua!4v1573592954615!5m2!1sru!2sua"
-                    allowfullscreen="">
-                </iframe>
-            </section>
-
-            <footer>
-                <div id="footer__contacts">
-                    <a href="#" class="header__logo-container">
-                        <img class="header__logo" src="img/logo.png" alt="Logo" width="150px" height="60px">
-                    </a>
-                    <p class="footer__phone"><i class="fas fa-phone"></i><a href="tel:+380672244375"
-                            title="Call me!">+38
-                            067
-                            224 43
-                            75</a></p>
-                    <p class="footer__mail"><i class="far fa-envelope"></i> <a
-                            href="mailto:nataliia.mogylchuk@gmail.com" title="Write me!"
-                            target="_blank">nataliia.mogylchuk@gmail.com</a></p>
-                    <p class="footer__address"><i class="fas fa-map-marker-alt"></i>Ukraine, Kiev</p>
-                    <div class="footer__network">
-                        <a href="https://ua.linkedin.com/in/nataliia-mogylchuk-68328667" title="Visit my Linkedin page"
-                            target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.facebook.com/public/Nataliia-Mogylchuk" title="Visit my Facebook page"
-                            target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="http://www.autgram.com/u/natalka_mogylchuk" title="Visit my Instagram page"
-                            target="_blank"><i class="fab fa-instagram"></i></a>
-                    </div>
-                    <p class="footer__owner">Copyright 2019</p>
-                </div>
-            </footer>
+        <section id="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.1905986436523!2d30.619127916026933!3d50.437550379473635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c568143feba1%3A0x81deed3e317d95af!2z0JrQvtC80YTQvtGA0YIg0KLQsNGD0L0!5e0!3m2!1sru!2sua!4v1573592954615!5m2!1sru!2sua"
+                allowfullscreen="">
+            </iframe>
+        </section>
     </main>
+    
+        <footer>
+            <div id="footer__contacts">
+                <a href="#" class="header__logo-container">
+                    <img class="header__logo" src="img/logo.png" alt="Logo">
+                </a>
+                <p class="footer__phone"><i class="fas fa-phone"></i><a href="tel:+380672244375" title="Call me!">+38
+                        067
+                        224 43
+                        75</a></p>
+                <p class="footer__mail"><i class="far fa-envelope"></i> <a href="mailto:nataliia.mogylchuk@gmail.com"
+                        title="Write me!" target="_blank">nataliia.mogylchuk@gmail.com</a></p>
+                <p class="footer__address"><i class="fas fa-map-marker-alt"></i>Ukraine, Kiev</p>
+                <div class="footer__network">
+                    <a href="https://ua.linkedin.com/in/nataliia-mogylchuk-68328667" title="Visit my Linkedin page"
+                        target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/public/Nataliia-Mogylchuk" title="Visit my Facebook page"
+                        target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="http://www.autgram.com/u/natalka_mogylchuk" title="Visit my Instagram page"
+                        target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p class="footer__owner">Copyright 2019</p>
+            </div>
+        </footer>
+   
 </body>
 
 </html>

@@ -14,6 +14,20 @@
     .nav {
         display: none;
     }
+    .lot__information {
+        flex-direction: column;
+    }
+    .lot__slider {
+        width: 100%;
+    }
+    .lot__details {
+        text-align: center;
+        margin: 0;
+    }
+    .lot__bid-information {
+        text-align: center;
+        margin: 0;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -23,10 +37,41 @@
 /* Extra Small Devices, Phones */
 
 @media only screen and (max-width: 480px) {
-    * {
-        min-width: 480px;
+    body {
+        font-size: 0.9em;
+    }
+    .auction__item-description {
+        width: 100%;
+        text-align: center;
+    }
+    form.contact input[type="submit"], form.contact input[type="reset"] {
+        width: 100%;
+    }
+    .partner__logo-item img {
+        width: 100px;
+        height: 35px;
     }
     footer {
         flex-direction: column;
+        font-size: 0.8em;
+    }
+
+    .lot__information {
+        margin: 0;
+      }
+
+    .lot__information {
+        flex-direction: column;
+    }
+    .lot__slider {
+        width: 100%;
+    }
+    .lot__details {
+        text-align: center;
+        margin: 0;
+    }
+    .lot__bid-information {
+        text-align: center;
+        margin: 0;
     }
 }
