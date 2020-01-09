@@ -41,20 +41,14 @@ nav li a:hover {
     box-shadow: 1px 5px 10px -5px #000000;
 }
 
-/* .nav li a::after {
-    margin: 0 30px;
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
+ .nav li.devider {
     width: 1px;
-    height: 15px;
     background: #606060;
-} */
+}
 
 .nav li a:last-child::after {
     margin: 0 30px;
     content: "";
-    
 }
 
 .nav li .nav__item-submenu {

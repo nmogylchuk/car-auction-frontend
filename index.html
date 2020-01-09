@@ -33,6 +33,7 @@
                             <li><a href="#" class="nav__item-link">Submenu1</a></li>
                         </ul>
                     </li>
+                    <li class="devider"></li>
 
                     <li class="nav__item">
                         <a href="#advantages">Наші переваги</a>
@@ -42,6 +43,7 @@
                             <li><a href="#" class="nav__item-link">Submenu1</a></li>
                         </ul>
                     </li>
+                    <li class="devider"></li>
 
                     <li class="nav__item">
                         <a href="#clients">Наші клієнти</a>
@@ -51,6 +53,7 @@
                             <li><a href="#" class="nav__item-link">Submenu1</a></li>
                         </ul>
                     </li>
+                    <li class="devider"></li>
 
                     <li class="nav__item">
                         <a href="#contacts">Контакти</a>
@@ -75,7 +78,52 @@
         <!-- Search button -->
 
         <form class="search" action="#">
-            <input type="text" placeholder="Введіть Toyota Camry, Nissan X-Trail..." name="search">
+
+            <select id="brand" name="brand" size="3" multiple>
+                <option value="acura">Acura</option>
+                <option value="audi">Audi</option>
+                <option value="bmw">BMW</option>
+                <option value="cadillac">Cadillac</option>
+                <option value="chevrolet">Chevrolet</option>
+                <option value="dodge">Dodge</option>
+                <option value="fiat">Fiat</option>
+                <option value="ford">Fiat</option>
+                <option value="honda">Honda</option>
+                <option value="hyundai">Hyundai</option>
+                <option value="infinity">Infinity</option>
+                <option value="saab">Saab</option>
+            </select>
+
+            <select id="model" name="model" size="3" multiple>
+                <option value=a7>A7</option>
+                <option value="x5">X5</option>
+                <option value="touran">Touran</option>
+                <option value="tiguan">Tiguan</option>
+            </select>
+
+            <select id="year" name="year" size="3" multiple>
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+            </select>
+
+            <select id="gearbox" name="gearbox" size="3" multiple>
+                <option value="automatic">Автомат</option>
+                <option value="manual">Механічна</option>
+                <option value="robot">Роботизована</option>
+            </select>
+
+            <select id="engine" name="engine" size="3" multiple>
+                <option value="diesel">Дизель</option>
+                <option value="fuel">Бензин</option>
+                <option value="hybrid">Гібрид</option>
+                <option value="electro">Електро</option>
+            </select>
+
             <button type="submit"><i class="fa fa-search"></i></button>
         </form>
 
@@ -113,6 +161,9 @@
 
         <section>
             <h2 id=" advantages__title">Наші переваги</h2>
+                        <p class="advantages__details"> СAR - це зручна та проста у користуванні веб-платформа з
+                            головним офісом у м.Київ, що надає онлайн доступ до оптових авто аукціонів та дилерів США та
+                            Канади для клієнтів з більш ніж 120 країн світу протягом останніх 10 років.</p>
                         <div class="advantages">
                             <div class="advantages__item">
                                 <p><i class="fas fa-user-shield"></i></p>
@@ -299,178 +350,206 @@
 
         </section>
 
-        <!-- Contact information -->
-
-        <form action="#" method="post" target="_blank">
-            <fieldset>
-                <legend>Особиста інформація</legend>
-                <label for="firstname">Ваше ім`я</label>
-                <input id="firstname" type="text" name="firstname" pattern="[A-Za-z]{1,32}"
-                    title=" Your name should only contain upper and lowercase letters (e.g. Ivan)"
-                    placeholder="Put your name" size="30" maxlength="100" required>
-
-                <label for="lastname">Ваше прізвище</label>
-                <input id="lastname" type="text" name="lastname" pattern="[A-Za-z]{1,32}"
-                    title=" Your last name should only contain upper and lowercase letters (e.g. Ivanov)"
-                    placeholder=" Put your last name" required>
-
-                <label for="female">Жін</label>
-                <input id="female" type="radio" name="gender" value="female" checked>
-
-                <label for="male">Чол</label>
-                <input id="male" type="radio" name="gender" value="female">
-                <br />
-                <label for="mail">E-mail</label>
-                <input id="mail" type="email" title="Your e-mail should contain @ (e.g. ivanov@gmail.com)"
-                    placeholder="Put your e-mail" required>
-
-                <label for="phone">Телефон</label>
-                <input id="phone" type="tel" pattern="^\+38 \d{3}-\d{3}-\d{2}-\d{2}"
-                    title="Your phone should only contain numbers and format +38 000-000-00-00)"
-                    placeholder="Put your phone" required>
-            </fieldset>
-
-            <fieldset>
-                <legend>Додаткова інформація</legend>
-                <label for="networks">Як Ви нас знайшли?</label>
-                <input type="text" name="networks" id="networks" list="networks_list">
-
-                <datalist id="networks_list">
-                    <option value="website"></option>
-                    <option value="facebook"></option>
-                    <option value="instagram"></option>
-                    <option value="friends recommendation"></option>
-                </datalist>
-
-                <label for="message">Ваш коментар</label>
-                <textarea id="message" name="message" rows="5" cols="30" maxlength="1000"></textarea>
-
-                <label for="data">Я погоджуюся на обробку персональних даних.</label>
-                <input id="data" type="checkbox" name="personal-data" checked required>
-            </fieldset>
-
-            <input type="submit" value="Підтвердити">
-            <input type="reset" value="Скинути">
-        </form>
-
-
-        <!-- Team -->
+        <!-- Partnerts -->
 
         <section>
-            <h2 id="team__title">Наша команда</h2>
-            <div class="team">
-                <div class="team__item">
-                    <figure>
-                        <img class="team__photo" src="./img/team_item1.jpg" alt="person1">
-                        <figcaption class="team__name">Євген Маслюков</figcaption>
-                    </figure>
-
-                    <p class="team__phone">
-                        <i class="fas fa-phone"></i>
-                        <a href="tel:+380672244375" title="Call me!">+38 067 224 43 75</a>
-                    </p>
-                    <p class="team__mail">
-                        <i class="far fa-envelope"></i>
-                        <a href="mailto:nataliia.mogylchuk@gmail.com" title="Write me!"
-                            target="_blank">nataliia.mogylchuk@gmail.com</a>
-                    </p>
-
-                    <div class="team__network">
-                        <a href="https://ua.linkedin.com/in/nataliia-mogylchuk-68328667" title="Visit my Linkedin page"
-                            target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.facebook.com/public/Nataliia-Mogylchuk" title="Visit my Facebook page"
-                            target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="http://www.autgram.com/u/natalka_mogylchuk" title="Visit my Instagram page"
-                            target="_blank"><i class="fab fa-instagram"></i></a>
-                    </div>
+            <h2 id="partner__title">Наші партнери</h2>
+            <div class="partner__logos">
+                <div class="partner__logo-item">
+                    <img class="partner__logo-item1" src="img/partners/partner_budget.png" alt="partner_logo-item1">
+                </div>
+                <div class="partner__logo-item">
+                    <img class="partner__logo-item2" src="img/partners/partner_dollar.png" alt="partner_logo-item2">
+                </div>
+                <div class="partner__logo-item">
+                    <img class="partner__logo-item3" src="img/partners/partner_europcar.png" alt="partner_logo-item3">
+                </div>
+                <div class="partner__logo-item">
+                    <img class="partner__logo-item4" src="img/partners/partner_national.png" alt="partner_logo-item4">
+                </div>
+                <div class="partner__logo-item">
+                    <img class="partner__logo-item5" src="img/partners/partner_sixt.png" alt="partner_logo-item5">
+                </div>
+                <div class="partner__logo-item">
+                    <img class="partner__logo-item5" src="img/partners/partner_hertz.png" alt="partner_logo-item5">
+                </div>
+                <div class="partner__logo-item">
+                    <img class="partner__logo-item5" src="img/partners/partner_alamo.png" alt="partner_logo-item5">
                 </div>
 
-                <div class="team__item">
-                    <figure>
-                        <img class="team__photo" src="./img/team_item2.jpg" alt="person1">
-                        <figcaption class="team__name">Анна Казміренко</figcaption>
-                    </figure>
-
-                    <p class="team__phone">
-                        <i class="fas fa-phone"></i>
-                        <a href="tel:+380672244375" title="Call me!">+38 067 224 43 75</a>
-                    </p>
-                    <p class="team__mail">
-                        <i class="far fa-envelope"></i>
-                        <a href="mailto:nataliia.mogylchuk@gmail.com" title="Write me!"
-                            target="_blank">nataliia.mogylchuk@gmail.com</a>
-                    </p>
-
-                    <div class="team__network">
-                        <a href="https://ua.linkedin.com/in/nataliia-mogylchuk-68328667" title="Visit my Linkedin page"
-                            target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.facebook.com/public/Nataliia-Mogylchuk" title="Visit my Facebook page"
-                            target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="http://www.autgram.com/u/natalka_mogylchuk" title="Visit my Instagram page"
-                            target="_blank"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-
-                <div class="team__item">
-                    <figure>
-                        <img class="team__photo" src="./img/team_item3.jpg" alt="person1">
-                        <figcaption class="team__name">Борис Грінченко</figcaption>
-                    </figure>
-
-                    <p class="team__phone">
-                        <i class="fas fa-phone"></i>
-                        <a href="tel:+380672244375" title="Call me!">+38 067 224 43 75</a>
-                    </p>
-                    <p class="team__mail">
-                        <i class="far fa-envelope"></i>
-                        <a href="mailto:nataliia.mogylchuk@gmail.com" title="Write me!"
-                            target="_blank">nataliia.mogylchuk@gmail.com</a>
-                    </p>
-
-                    <div class="team__network">
-                        <a href="https://ua.linkedin.com/in/nataliia-mogylchuk-68328667" title="Visit my Linkedin page"
-                            target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.facebook.com/public/Nataliia-Mogylchuk" title="Visit my Facebook page"
-                            target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="http://www.autgram.com/u/natalka_mogylchuk" title="Visit my Instagram page"
-                            target="_blank"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
             </div>
-        </section>
 
-        <!-- Map -->
+            <!-- Contact information -->
 
-        <section class="map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.1905986436523!2d30.619127916026933!3d50.437550379473635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c568143feba1%3A0x81deed3e317d95af!2z0JrQvtC80YTQvtGA0YIg0KLQsNGD0L0!5e0!3m2!1sru!2sua!4v1573592954615!5m2!1sru!2sua"
-                allowfullscreen="">
-            </iframe>
-        </section>
+            <form class="contact" action="#" method="post" target="_blank">
+                <fieldset>
+                    <legend>Форма зворотнього зв`язку</legend>
+                    <label for="firstname">Ваше ім`я</label>
+                    <input id="firstname" type="text" name="firstname" pattern="[A-Za-z]{1,32}"
+                        title=" Your name should only contain upper and lowercase letters (e.g. Ivan)"
+                        placeholder="Put your name" size="30" maxlength="100" required>
 
-        <footer>
-            <div id="footer__contacts">
-                <a href="#" class="header__logo-container">
-                    <img class="header__logo" src="img/logo.png" alt="Logo" width="150px" height="60px">
-                </a>
-                <p class="footer__phone"><i class="fas fa-phone"></i><a href="tel:+380672244375" title="Call me!">+38
-                        067
-                        224 43
-                        75</a></p>
-                <p class="footer__mail"><i class="far fa-envelope"></i> <a href="mailto:nataliia.mogylchuk@gmail.com"
-                        title="Write me!" target="_blank">nataliia.mogylchuk@gmail.com</a></p>
-                <p class="footer__address"><i class="fas fa-map-marker-alt"></i>Ukraine, Kiev</p>
-                <div class="footer__network">
-                    <a href="https://ua.linkedin.com/in/nataliia-mogylchuk-68328667" title="Visit my Linkedin page"
-                        target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.facebook.com/public/Nataliia-Mogylchuk" title="Visit my Facebook page"
-                        target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="http://www.autgram.com/u/natalka_mogylchuk" title="Visit my Instagram page"
-                        target="_blank"><i class="fab fa-instagram"></i></a>
+                    <label for="lastname">Ваше прізвище</label>
+                    <input id="lastname" type="text" name="lastname" pattern="[A-Za-z]{1,32}"
+                        title=" Your last name should only contain upper and lowercase letters (e.g. Ivanov)"
+                        placeholder=" Put your last name" required>
+
+                    <label for="female">Жін</label>
+                    <input id="female" type="radio" name="gender" value="female" checked>
+
+                    <label for="male">Чол</label>
+                    <input id="male" type="radio" name="gender" value="female">
+                    <br />
+                    <label for="mail">E-mail</label>
+                    <input id="mail" type="email" title="Your e-mail should contain @ (e.g. ivanov@gmail.com)"
+                        placeholder="Put your e-mail" required>
+
+                    <label for="phone">Телефон</label>
+                    <input id="phone" type="tel" pattern="^\+38 \d{3}-\d{3}-\d{2}-\d{2}"
+                        title="Your phone should only contain numbers and format +38 000-000-00-00)"
+                        placeholder="Put your phone" required>
+
+                    <label for="networks">Як Ви нас знайшли?</label>
+                    <input type="text" name="networks" id="networks" list="networks_list">
+
+                    <datalist id="networks_list">
+                        <option value="website"></option>
+                        <option value="facebook"></option>
+                        <option value="instagram"></option>
+                        <option value="friends recommendation"></option>
+                    </datalist>
+
+                    <label for="message">Ваш коментар</label>
+                    <textarea id="message" name="message" rows="5" cols="30" maxlength="1000"></textarea>
+
+                    <label for="data">Я погоджуюся на обробку персональних даних.</label>
+                    <input id="data" type="checkbox" name="personal-data" checked required>
+                </fieldset>
+
+                <input type="submit" value="Підтвердити">
+                <input type="reset" value="Скинути">
+            </form>
+
+
+            <!-- Team -->
+
+            <section>
+                <h2 id="team__title">Наша команда</h2>
+                <div class="team">
+                    <div class="team__item">
+                        <figure>
+                            <img class="team__photo" src="./img/team_item1.jpg" alt="person1">
+                            <figcaption class="team__name">Євген Маслюков</figcaption>
+                        </figure>
+
+                        <p class="team__phone">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+380672244375" title="Call me!">+38 067 224 43 75</a>
+                        </p>
+                        <p class="team__mail">
+                            <i class="far fa-envelope"></i>
+                            <a href="mailto:nataliia.mogylchuk@gmail.com" title="Write me!"
+                                target="_blank">nataliia.mogylchuk@gmail.com</a>
+                        </p>
+
+                        <div class="team__network">
+                            <a href="https://ua.linkedin.com/in/nataliia-mogylchuk-68328667"
+                                title="Visit my Linkedin page" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/public/Nataliia-Mogylchuk" title="Visit my Facebook page"
+                                target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="http://www.autgram.com/u/natalka_mogylchuk" title="Visit my Instagram page"
+                                target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="team__item">
+                        <figure>
+                            <img class="team__photo" src="./img/team_item2.jpg" alt="person1">
+                            <figcaption class="team__name">Анна Казміренко</figcaption>
+                        </figure>
+
+                        <p class="team__phone">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+380672244375" title="Call me!">+38 067 224 43 75</a>
+                        </p>
+                        <p class="team__mail">
+                            <i class="far fa-envelope"></i>
+                            <a href="mailto:nataliia.mogylchuk@gmail.com" title="Write me!"
+                                target="_blank">nataliia.mogylchuk@gmail.com</a>
+                        </p>
+
+                        <div class="team__network">
+                            <a href="https://ua.linkedin.com/in/nataliia-mogylchuk-68328667"
+                                title="Visit my Linkedin page" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/public/Nataliia-Mogylchuk" title="Visit my Facebook page"
+                                target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="http://www.autgram.com/u/natalka_mogylchuk" title="Visit my Instagram page"
+                                target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="team__item">
+                        <figure>
+                            <img class="team__photo" src="./img/team_item3.jpg" alt="person1">
+                            <figcaption class="team__name">Борис Грінченко</figcaption>
+                        </figure>
+
+                        <p class="team__phone">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+380672244375" title="Call me!">+38 067 224 43 75</a>
+                        </p>
+                        <p class="team__mail">
+                            <i class="far fa-envelope"></i>
+                            <a href="mailto:nataliia.mogylchuk@gmail.com" title="Write me!"
+                                target="_blank">nataliia.mogylchuk@gmail.com</a>
+                        </p>
+
+                        <div class="team__network">
+                            <a href="https://ua.linkedin.com/in/nataliia-mogylchuk-68328667"
+                                title="Visit my Linkedin page" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/public/Nataliia-Mogylchuk" title="Visit my Facebook page"
+                                target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="http://www.autgram.com/u/natalka_mogylchuk" title="Visit my Instagram page"
+                                target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <p class="footer__owner">Copyright 2019</p>
-            </div>
-        </footer>
+            </section>
+
+            <!-- Map -->
+
+            <section class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.1905986436523!2d30.619127916026933!3d50.437550379473635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c568143feba1%3A0x81deed3e317d95af!2z0JrQvtC80YTQvtGA0YIg0KLQsNGD0L0!5e0!3m2!1sru!2sua!4v1573592954615!5m2!1sru!2sua"
+                    allowfullscreen="">
+                </iframe>
+            </section>
+
+            <footer>
+                <div id="footer__contacts">
+                    <a href="#" class="header__logo-container">
+                        <img class="header__logo" src="img/logo.png" alt="Logo" width="150px" height="60px">
+                    </a>
+                    <p class="footer__phone"><i class="fas fa-phone"></i><a href="tel:+380672244375"
+                            title="Call me!">+38
+                            067
+                            224 43
+                            75</a></p>
+                    <p class="footer__mail"><i class="far fa-envelope"></i> <a
+                            href="mailto:nataliia.mogylchuk@gmail.com" title="Write me!"
+                            target="_blank">nataliia.mogylchuk@gmail.com</a></p>
+                    <p class="footer__address"><i class="fas fa-map-marker-alt"></i>Ukraine, Kiev</p>
+                    <div class="footer__network">
+                        <a href="https://ua.linkedin.com/in/nataliia-mogylchuk-68328667" title="Visit my Linkedin page"
+                            target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/public/Nataliia-Mogylchuk" title="Visit my Facebook page"
+                            target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="http://www.autgram.com/u/natalka_mogylchuk" title="Visit my Instagram page"
+                            target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <p class="footer__owner">Copyright 2019</p>
+                </div>
+            </footer>
     </main>
 </body>
 
