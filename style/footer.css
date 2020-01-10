@@ -1,0 +1,68 @@
+/* footer */
+
+footer {
+    background: #9e9b9b;
+    color: #ffffff;
+}
+
+#footer__contacts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 30px;
+}
+
+.footer__phone, .footer__mail, .footer__address {
+    padding: 10px;
+}
+
+.footer__phone a, .footer__mail a {
+    text-decoration: none;
+}
+
+.footer__phone a:link, .footer__mail a:link {
+    color: #ffffff;
+}
+
+.footer__phone a:hover, .footer__mail a:hover {
+    color: #000000;
+    cursor: pointer;
+}
+
+.footer__phone li a:focus, .footer__mail a:focus {
+    color: #606060;
+}
+
+.footer__phone li a:active, .footer__mail a:active {
+    color: #606060;
+}
+
+.footer__network {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+    font-size: 25px;
+}
+
+.footer__network .fa-linkedin, .footer__network .fa-instagram, .footer__network .fa-facebook {
+    color: #606060;
+    padding: 0 10px;
+}
+
+.footer__network .fa-linkedin:hover, .footer__network .fa-instagram:hover, .footer__network .fa-facebook:hover {
+    color: #000000;
+    font-size: 30px;
+}
+
+.footer__network .fa-linkedin:focus, .footer__network .fa-instagram:focus, .footer__network .fa-facebook:focus {
+    color: #000000;
+    font-size: 30px;
+}
+
+.footer__network .fa-linkedin:active, .footer__network .fa-instagram:active, .footer__network .fa-facebook:active {
+    color: #000000;
+    font-size: 30px;
+}

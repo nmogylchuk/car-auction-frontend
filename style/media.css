@@ -74,4 +74,12 @@
         text-align: center;
         margin: 0;
     }
+
+    .auction__item-block {
+        flex-wrap: wrap;
+    }
+
+    .auction__item-block img {
+        width: 100%;
+    }
 }
