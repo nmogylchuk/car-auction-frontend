@@ -1,6 +1,8 @@
 const lotsData = loadLotsData();
 
-function lotsTemplate(lot) {
+document.getElementById("auction__lots").innerHTML = `${lotsData.map(loadLotTemplate).join('')}`;
+
+function loadLotTemplate(lot) {
     return `
     <div class="auction__item">
         <div class="auction__item-block">
@@ -19,13 +21,4 @@ function lotsTemplate(lot) {
         </div>
     </div>
     `
-}
-
-document.getElementById("auction__lots").innerHTML = `
-${lotsData.map(lotsTemplate).join('')}`
-
-function linkToChosenLot(lotId) {
-    var lot = lotsData.find(x => x.id === lotId);
-    localStorage.setItem("currentLot", JSON.stringify(lot));
-    window.location.href = 'lots_card.html';
-}
+};

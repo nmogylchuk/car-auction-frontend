@@ -1,5 +1,6 @@
 function loadLotsData() {
-    return [{
+    return [
+    {
         "id": 1,
         "images": [
             "img/lots/lot_22122019/lot_221219_01.jpg",
