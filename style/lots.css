@@ -115,8 +115,12 @@
   text-transform: uppercase;
 }
 
-.lot__bid-start, .lot__bid-current, .lot__bid-fee {
+.lot__bid-price, .lot__bid-current, .lot__bid-end, .lot__bid-fee {
 padding: 10px;
+}
+
+.lot__bid-information[type="submit"] {
+
 }
 
 /* Lot description */

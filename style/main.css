@@ -20,6 +20,13 @@ body {
 
 /* search button */
 
+#search__title {
+    font-size: 2.5em;
+    color: #2c343c;
+    text-align: center;
+    padding: 30px 10px 10px;
+}
+
 form.search {
     display: flex;
     flex-wrap: wrap;
@@ -29,7 +36,7 @@ form.search {
     padding: 5px;
     border: 1px solid #000000;
     background: #2c343c;
-    border-radius: 5px;
+    z-index: 6;
     box-shadow: 1px 5px 10px -5px #000000;
 }
 
@@ -49,7 +56,6 @@ form.search button {
     box-shadow: 1px 5px 10px -5px #006400;
     color: #ffffff;
     border: 1px solid #2c343c;
-    border-radius: 5px;
     cursor: pointer;
     width: 200px;
     margin:20px 0;
@@ -65,9 +71,9 @@ form.search button:hover {
 
 #advantages__title {
     font-size: 2.5em;
-    color: #606060;
+    color: #2c343c;
     text-align: center;
-    padding: 30px;
+    padding: 30px 10px 10px;
 }
 
 .advantages {
@@ -78,12 +84,12 @@ form.search button:hover {
 
 .advantages__details {
     padding: 20px;
-    margin: 20px; 
+    margin: 20px;
     text-align: center; 
     line-height: 2;
     background: #2c343c;
-    border-radius: 5px;
     color: #ffffff;
+    text-transform: uppercase;
 }
 
 .advantages__item {
@@ -93,7 +99,6 @@ form.search button:hover {
     padding: 20px;
     margin: 20px;
     border: #000000;
-    border-radius: 20px;
     text-align: center;
     line-height: 2;
 }
@@ -106,21 +111,21 @@ form.search button:hover {
 .advantages__subtitle {
     text-align: center;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .advantages__description {
     text-align: center;
     font-weight: bold;
-    text-transform: uppercase;
 }
 
 /*auction */
 
 #auction__title {
     font-size: 2.5em;
-    color: #606060;
+    color: #2c343c;
     text-align: center;
-    padding: 30px;
+    padding: 30px 10px 10px;
 }
 
 #auction__lots {
@@ -140,7 +145,11 @@ form.search button:hover {
     border: #000000;
     padding: 30px 10px;
     margin: 20px;
-    max-width: 60px;
+    max-width: 670px;
+}
+
+.auction__item-model {
+    font-style: italic;
 }
 
 .auction__item-block {
@@ -165,7 +174,6 @@ input[type="submit"], input[type="reset"] {
     padding: 10px 30px;
     cursor: pointer;
     width: 100%;
-    border-radius: 6px;
     box-shadow: 1px 5px 10px -5px #006400;
     transition: all 0.3s ease;
     margin: 5px 0;
@@ -181,6 +189,38 @@ input[type="submit"]:hover, input[type="reset"]:hover {
     width: 25px;
 }
 
+/* pagination */
+
+.pagination {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 30px auto;
+}
+
+.pagination a {
+    color: #000000;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background: #00cd00;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 1px 5px 10px -5px #006400;
+    transition: all 0.3s ease;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #606060;
+    color: #ffffff;
+}
+
 /*team */
 
 .team {
@@ -194,9 +234,9 @@ input[type="submit"]:hover, input[type="reset"]:hover {
 
 #team__title {
     font-size: 2.5em;
-    color: #606060;
+    color: #2c343c;
     text-align: center;
-    padding: 30px;
+    padding: 30px 10px 10px;
 }
 
 .team__photo {
@@ -255,9 +295,9 @@ input[type="submit"]:hover, input[type="reset"]:hover {
 
 #partner__title {
     font-size: 2.5em;
-    color: #606060;
+    color: #2c343c;
     text-align: center;
-    padding: 30px;
+    padding: 30px 10px 10px;
 }
 
 .partner__logos {
@@ -276,14 +316,32 @@ input[type="submit"]:hover, input[type="reset"]:hover {
     height: 40px;
 }
 
+/* video  */
+
+.company__video {
+    width: 100%;
+    margin: auto;
+}
+
 /* form  */
+
+#form__title {
+    font-size: 2.5em;
+    color: #2c343c;
+    text-align: center;
+    padding: 30px 10px 10px; 
+}
+
+.form__description {
+    text-align: center; 
+    margin: 0 20px;
+}
 
 form.contact {
     margin: 30px 20px;
     padding: 30px;
     border: 1px solid #000000;
-    background: #606060;
-    border-radius: 20px;
+    background: #2c343c;
     box-shadow: 1px 5px 10px -5px #000000;
 }
 
@@ -297,7 +355,6 @@ form.contact fieldset {
 form.contact legend {
     background: #ffffff;
     padding: 10px;
-    border-radius: 5px;
     text-transform: uppercase;
     font-size: 1em;
     text-align: center;

@@ -1,6 +1,5 @@
 /* header */
 
-
 header {
     width: 100%;
     background: #ffffff;
@@ -16,7 +15,7 @@ header {
 }
 
 .header__logo-container img {
-width: 100px;
+    width: 100px;
 }
 
 .nav {
@@ -36,12 +35,12 @@ width: 100px;
     width: 250px;
 }
 
-nav li a:hover {
+.nav li a:hover {
     color: #c00;
     box-shadow: 1px 5px 10px -5px #000000;
 }
 
- .nav li.devider {
+.nav li.devider {
     width: 1px;
     background: #e0e0e0;
 }

@@ -41,9 +41,10 @@ footer {
 .footer__network {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     margin: auto;
     text-align: center;
-    padding: 30px;
+    padding: 10px;
     font-size: 25px;
 }
 
