@@ -1,6 +1,10 @@
 const teamMembersData = loadTeamMembersData();
 
-document.getElementsByClassName("team")[0].innerHTML = `${teamMembersData.map(loalTeamMemberTemplate).join('')}`;
+loadTeamMembers();
+
+function loadTeamMembers() {
+    document.getElementsByClassName("team")[0].innerHTML = `${teamMembersData.map(loalTeamMemberTemplate).join('')}`;
+};
 
 function loalTeamMemberTemplate(teamMember) {
     return `

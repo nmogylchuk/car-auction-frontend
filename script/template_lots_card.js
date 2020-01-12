@@ -1,12 +1,12 @@
 function loadCurrentLot() {
-    var lot = JSON.parse(localStorage.getItem("currentLot"));
-    var imgSrcText = getImgSrcText(lot.images);
-    var imgDivText = getImgDivText(lot.images);
-    var interierLiText = getLiText(lot.interier);
-    var exteriorLiText = getLiText(lot.exterior);
-    var safatyLiText = getLiText(lot.safaty);
-    var descriptionLiText = getLiText(lot.description);
-    return `
+  var lot = JSON.parse(localStorage.getItem("currentLot"));
+  var imgSrcText = getImgSrcText(lot.images);
+  var imgDivText = getImgDivText(lot.images);
+  var interierLiText = getLiText(lot.interier);
+  var exteriorLiText = getLiText(lot.exterior);
+  var safatyLiText = getLiText(lot.safaty);
+  var descriptionLiText = getLiText(lot.description);
+  return `
     <section>
 
       <div class="lot__information">
@@ -84,35 +84,39 @@ function loadCurrentLot() {
 }
 
 function getImgSrcText(imgArray) {
-    var imgText = "";
-    if (imgArray !== null) {
-        for (i = 0; i < imgArray.length; i++) {
-            imageId = i + 1;
-            imgText += `<img class="lotSliderMiniItem" src="${imgArray[i]}" alt="lot__slider-mini${imageId}" onclick="currentSlide(${imageId})"></img>\n`;
-        }
+  var imgText = "";
+  if (imgArray !== null) {
+    for (i = 0; i < imgArray.length; i++) {
+      imageId = i + 1;
+      imgText += `<img class="lotSliderMiniItem" src="${imgArray[i]}" alt="lot__slider-mini${imageId}" onclick="currentSlide(${imageId})"></img>\n`;
     }
-    return imgText;
+  }
+  return imgText;
 }
 
 function getImgDivText(imgArray) {
-    var imgText = "";
-    if (imgArray !== null) {
-        for (i = 0; i < imgArray.length; i++) {
-            imageId = i + 1;
-            imgText += `<div class="lotSliderMaxi"><div class="lot__slider-number">${imageId} / ${imgArray.length}</div><img src="${imgArray[i]}" alt="lot__slider-maxi1"></div>\n`;
-        }
+  var imgText = "";
+  if (imgArray !== null) {
+    for (i = 0; i < imgArray.length; i++) {
+      imageId = i + 1;
+      imgText += `<div class="lotSliderMaxi"><div class="lot__slider-number">${imageId} / ${imgArray.length}</div><img src="${imgArray[i]}" alt="lot__slider-maxi1"></div>\n`;
     }
-    return imgText;
+  }
+  return imgText;
 }
 
 function getLiText(textArray) {
-    var liText = "";
-    if (textArray !== null) {
-        for (i = 0; i < textArray.length; i++) {
-            liText += `<li>${textArray[i]}</li>\n`;
-        }
+  var liText = "";
+  if (textArray !== null) {
+    for (i = 0; i < textArray.length; i++) {
+      liText += `<li>${textArray[i]}</li>\n`;
     }
-    return liText;
+  }
+  return liText;
 }
 
-document.getElementById("lot__fullinformation").innerHTML = `${loadCurrentLot()}`
+loadCurrentLotData()
+
+function loadCurrentLotData() {
+  document.getElementById("lot__fullinformation").innerHTML = `${loadCurrentLot()}`
+}

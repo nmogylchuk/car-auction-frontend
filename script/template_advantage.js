@@ -1,6 +1,10 @@
 const advantagesData = loadAdvantagesData();
 
-document.getElementsByClassName("advantages ")[0].innerHTML = `${advantagesData.map(loadAdvantageTemplate).join('')}`;
+loadAdvantages();
+
+function loadAdvantages() {
+    document.getElementsByClassName("advantages ")[0].innerHTML = `${advantagesData.map(loadAdvantageTemplate).join('')}`;
+};
 
 function loadAdvantageTemplate(advantage) {
     return `

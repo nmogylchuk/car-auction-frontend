@@ -1,6 +1,10 @@
 const lotsData = loadLotsData();
 
-document.getElementById("auction__lots").innerHTML = `${lotsData.map(loadLotTemplate).join('')}`;
+loadLots();
+
+function loadLots() {
+    document.getElementById("auction__lots").innerHTML = `${lotsData.map(loadLotTemplate).join('')}`;
+};
 
 function loadLotTemplate(lot) {
     return `
