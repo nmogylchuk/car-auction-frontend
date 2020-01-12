@@ -18,13 +18,14 @@ header {
     width: 100px;
 }
 
-.nav {
+nav ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     list-style: none;
 }
 
-.nav li a {
+nav ul li a {
     text-decoration: none;
     color: #606060;
     display: block;
@@ -35,22 +36,22 @@ header {
     width: 250px;
 }
 
-.nav li a:hover {
+nav ul li a:hover {
     color: #c00;
     box-shadow: 1px 5px 10px -5px #000000;
 }
 
-.nav li.devider {
+nav ul li.devider {
     width: 1px;
     background: #e0e0e0;
 }
 
-.nav li a:last-child::after {
+nav ul li a:last-child::after {
     margin: 0 30px;
     content: "";
 }
 
-.nav li .nav__item-submenu {
+nav ul li .nav__item-submenu {
     position: absolute;
     display: none;
     list-style: none;
@@ -69,28 +70,47 @@ header {
     z-index: 5;
 }
 
-.bars {
-    background: #000000;
-    display: none;
-    height: 2px;
-    width: 18px;
+.menu-icon {
     position: relative;
     cursor: pointer;
+    display: none;
 }
 
-.bars::before, .bars::after {
+.menu-icon .nav-icon {
+    position: relative;
+    background: #000000;
+    height: 2px;
+    width: 18px;
+    display: block;
+    
+}
+
+.menu-icon::before, .menu-icon::after {
     position: absolute;
     content: "";
     background: #000000;
-    display: inline-block;
+    display: block;
     height: 2px;
     width: 18px;
 }
 
-.bars::before {
+.menu-icon::before {
     top: 5px;
 }
 
-.bars::after {
+.menu-icon::after {
     top: -5px;
 }
+
+.menu-btn {
+    display: none;
+}
+
+.menu-btn:checked ~ .nav {
+    display: flex;
+    flex-direction: column;
+} 
+
+
+
+                        

@@ -8,12 +8,13 @@
     .header__content {
         justify-content: space-between;
     }
-    .bars {
+    .toggle .menu-icon {
         display: inline-block;
     }
     .nav {
         display: none;
     }
+    
     .lot__information {
         flex-direction: column;
     }

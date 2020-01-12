@@ -25,10 +25,12 @@
             </a>
 
             <nav>
-                <ul class="nav">
+                <input type="checkbox" id="menu-btn" class="menu-btn"></input>
 
+                <ul class="nav">
                     <li class="nav__item">
                         <a href="#advantages__title">Наші переваги</a>
+
                         <ul class="nav__item-submenu">
                             <li><a href="#" class="nav__item-link">Submenu1</a></li>
                             <li><a href="#" class="nav__item-link">Submenu1</a></li>
@@ -76,7 +78,7 @@
                 </ul>
 
                 <div class="toggle">
-                    <span class="bars"></span></a>
+                    <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
                 </div>
 
             </nav>
@@ -129,9 +131,12 @@
             <select id="year" name="year" size="3" multiple></select>
             <select id="gearbox" name="gearbox" size="3" multiple></select>
             <select id="engine" name="engine" size="3" multiple></select>
-            <button type="submit" onclick="return searchLots();">
-                <i class=" fa fa-search"></i>
-            </button>
+            <div class="search__buttons">
+                <button type="submit" onclick="return searchLots();">
+                    <i class="fa fa-search"></i>
+                </button>
+                <input type="reset" value="Скинути">
+            </div>
         </form>
 
         <!-- Auction -->
@@ -255,11 +260,12 @@
         </div>
     </footer>
 
+
+
     <script type="text/javascript" src="script/data_lots.js"></script>
     <script type="text/javascript" src="script/template_lot.js"></script>
-    
-    <script type="text/javascript" src="script/main.js"></script>
 
+    <script type="text/javascript" src="script/main.js"></script>
     <script type="text/javascript" src="script/data_advantages.js"></script>
     <script type="text/javascript" src="script/template_advantage.js"></script>
 

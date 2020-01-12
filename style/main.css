@@ -50,15 +50,19 @@ form.search #brand, form.search #model, form.search #year, form.search #gearbox,
     box-shadow: 1px 5px 10px -5px #000000;
 }
 
-form.search button {
+.search__buttons {
+    display: flex;
+    justify-content: space-around;
+}
+.search__buttons [type="submit"], .search__buttons [type="reset"]  {
     padding: 10px;
     background: #00cd00;
     box-shadow: 1px 5px 10px -5px #006400;
     color: #ffffff;
     border: 1px solid #2c343c;
     cursor: pointer;
-    width: 200px;
-    margin: 20px 0;
+    width: 150px;
+    margin: 20px 10px;
     font-size: 1.2;
 }
 
@@ -162,7 +166,6 @@ form.search button:hover {
     padding: 0 10px;
     max-width: 600px;
 }
-
 
 .auction__item-description {
     line-height: 1.8;
@@ -376,7 +379,6 @@ form.contact input[type="submit"], input[type="reset"] {
 }
 
 .slider figure {
-    position: relative;
     width: 500%;
     left: 0;
     margin: 0;
