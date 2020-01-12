@@ -58,7 +58,7 @@ form.search button {
     border: 1px solid #2c343c;
     cursor: pointer;
     width: 200px;
-    margin:20px 0;
+    margin: 20px 0;
     font-size: 1.2;
 }
 
@@ -85,7 +85,7 @@ form.search button:hover {
 .advantages__details {
     padding: 20px;
     margin: 20px;
-    text-align: center; 
+    text-align: center;
     line-height: 2;
     background: #2c343c;
     color: #ffffff;
@@ -160,7 +160,9 @@ form.search button:hover {
 
 .auction__item-block img {
     padding: 0 10px;
+    max-width: 600px;
 }
+
 
 .auction__item-description {
     line-height: 1.8;
@@ -316,24 +318,17 @@ input[type="submit"]:hover, input[type="reset"]:hover {
     height: 40px;
 }
 
-/* video  */
-
-.company__video {
-    width: 100%;
-    margin: auto;
-}
-
 /* form  */
 
 #form__title {
     font-size: 2.5em;
     color: #2c343c;
     text-align: center;
-    padding: 30px 10px 10px; 
+    padding: 30px 10px 10px;
 }
 
 .form__description {
-    text-align: center; 
+    text-align: center;
     margin: 0 20px;
 }
 
@@ -441,4 +436,3 @@ form.contact input[type="submit"], input[type="reset"] {
     width: 100%;
     position: absolute;
 }
-
