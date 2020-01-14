@@ -175,10 +175,10 @@
         </section>
 
         <!-- Contact information -->
-
+        <h2 id="form__title">Підпишіться на наші новини</h2>
+        <p class="form__description">Обіцяємо надсилати тільки корисний контент і ніякого спаму!</p>
         <form class="contact" action="#" method="post" target="_blank">
             <fieldset>
-                <legend>Форма зворотнього зв`язку</legend>
                 <label for="firstname">Ваше ім`я</label>
                 <input id="firstname" type="text" name="firstname" pattern="[A-Za-z]{1,32}"
                     title=" Your name should only contain upper and lowercase letters (e.g. Ivan)"
@@ -218,7 +218,7 @@
                 <textarea id="message" name="message" rows="5" cols="30" maxlength="1000"></textarea>
 
                 <label for="data">Я погоджуюся на обробку персональних даних.</label>
-                <input id="data" type="checkbox" name="personal-data" checked required>
+                <input id="data" type="checkbox" id="personal-data" checked required>
             </fieldset>
 
             <input type="submit" value="Підтвердити">

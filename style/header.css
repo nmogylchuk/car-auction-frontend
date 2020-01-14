@@ -1,21 +1,19 @@
 /* header */
 
-header {
-    width: 100%;
-    background: #ffffff;
-    border: 1px solid #e0e0e0;
-}
-
 .header__content {
     padding: 5px 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    position: fixed;
 }
 
 .header__logo-container img {
-    width: 100px;
+    width: 5em;
 }
 
 nav ul {
@@ -23,6 +21,10 @@ nav ul {
     flex-wrap: wrap;
     justify-content: space-around;
     list-style: none;
+}
+
+nav ul li {
+    position: relative;
 }
 
 nav ul li a {
@@ -51,19 +53,15 @@ nav ul li a:last-child::after {
     content: "";
 }
 
-nav ul li .nav__item-submenu {
+nav ul li > .nav__item-submenu {
     position: absolute;
     display: none;
+    background: white;
+    border: 1px solid #e0e0e0;
     list-style: none;
 }
 
-.nav__item-submenu {
-    background: white;
-    position: relative;
-    border: 1px solid #e0e0e0;
-}
-
-.nav li:hover .nav__item-submenu {
+.nav li:hover >.nav__item-submenu {
     display: block;
     visibility: visible;
     opacity: 1;

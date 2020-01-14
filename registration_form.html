@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Car Auction</title>
+    <link rel="stylesheet" type="text/css" href="style/registration_form.css">
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <link rel="stylesheet" type="text/css" href="style/header.css">
+    <link rel="stylesheet" type="text/css" href="style/footer.css">
+    <link rel="stylesheet" type="text/css" href="style/media.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+</head>
+
+<body>
+
+    <form class="registration__form" action="#" method="post" target="_blank">
+        <fieldset>
+            <h2 id="registration__title">Форма реєстрації</h2>
+            <p class="registration__description">Для подальшої реєстрації заповніть, будь ласка, дану форму.</p>
+
+            <label for="firstname">Ваше ім`я<span>*</span></label>
+            <input id="firstname" type="text" name="firstname" pattern="[A-Za-z]{1,32}"
+                title=" Your name should only contain upper and lowercase letters (e.g. Ivan)"
+                placeholder="Put your name" size="30" maxlength="100" required>
+
+            <label for="lastname">Ваше прізвище<span>*</span></label>
+            <input id="lastname" type="text" name="lastname" pattern="[A-Za-z]{1,32}"
+                title=" Your last name should only contain upper and lowercase letters (e.g. Ivanov)"
+                placeholder=" Put your last name" required>
+
+            <label for="password">Пароль<span>*</span></label>
+            <input type="password" placeholder="Enter Password" id="password" required>
+
+            <label for="password-repeat">Повторіть пароль<span>*</span></label>
+            <input type="password" placeholder="Repeat Password" id="password-repeat" required>
+
+            <p class="required"> * - Обов'язкове поле</p>
+
+            <label for="data">Я погоджуюся на обробку персональних даних.</label>
+            <input id="data" type="checkbox" id="personal-data" checked required>
+
+            <label for="remember">Запам`ятати мене</label>
+            <input type="checkbox" id="remember" checked required>
+
+            <input type="submit" value="Зареєструватися">
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

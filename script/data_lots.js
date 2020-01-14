@@ -683,7 +683,7 @@ function loadLotsData() {
         "year": 2013,
         "colour": "Оранжевий",
         "engine": "2.0 Бензин",
-        "gearbox": "Механічна",
+        "gearbox": "Механіка",
         "mileage": 49760,
         "mileageUnit": "km",
         "srcImg": "img/lots/lot_14/lot_14_01.jpg",
