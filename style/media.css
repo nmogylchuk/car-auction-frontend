@@ -5,16 +5,51 @@
 /* Medium Devices, Desktops */
 
 @media only screen and (max-width: 1060px) {
-    .header__content {
-       justify-content: space-between;
+    .header-container {
+        margin: auto;
+        padding: 10px;
+        justify-content: space-between;
     }
-    .toggle .menu-icon {
-        display: inline-block;
+    nav {
+        width: 100%;
+        position: relative;
     }
-    .nav {
-        display: none;
+
+    nav ul {
+        flex-direction: column;
     }
     
+    nav ul li {
+        height: 0;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    nav ul li a {
+        width: 100%;
+    }
+
+    nav ul li > .nav__item-submenu {
+        border: none;
+    }
+
+    nav ul li.devider {
+        display: none;
+    }
+
+    #menu-btn:checked+label+ul.nav>li {
+        opacity: 1;
+        visibility: visible;
+        height: auto;
+    }
+  
+    .nav-icon {
+        display: block;
+        position: absolute;
+        top: -20px;
+        right: 0;
+    }
+
     .lot__information {
         flex-direction: column;
     }
@@ -30,6 +65,7 @@
         margin: 0;
     }
 }
+  
 
 /* Small Devices, Tablets */
 
@@ -56,11 +92,9 @@
         flex-direction: column;
         font-size: 0.8em;
     }
-
     .lot__information {
         margin: 0;
-      }
-
+    }
     .lot__information {
         flex-direction: column;
     }
@@ -75,11 +109,9 @@
         text-align: center;
         margin: 0;
     }
-
     .auction__item-block {
         flex-wrap: wrap;
     }
-
     .auction__item-block img {
         width: 100%;
     }

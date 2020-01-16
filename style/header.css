@@ -19,11 +19,13 @@ nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    list-style: none;
+    justify-content: center;
+    width: 100%;
 }
 
 nav ul li {
     position: relative;
+    list-style: none;
 }
 
 nav ul li a {
@@ -52,7 +54,7 @@ nav ul li a:last-child::after {
     content: "";
 }
 
-nav ul li > .nav__item-submenu {
+nav ul li>.nav__item-submenu {
     position: absolute;
     display: none;
     background: white;
@@ -60,29 +62,24 @@ nav ul li > .nav__item-submenu {
     list-style: none;
 }
 
-.nav li:hover >.nav__item-submenu {
+nav li:hover>.nav__item-submenu {
     display: block;
     visibility: visible;
     opacity: 1;
     z-index: 5;
 }
 
-.menu-icon {
-    position: relative;
-    cursor: pointer;
-    display: none;
-}
-
-.menu-icon .nav-icon {
-    position: relative;
+.nav-icon {
     background: #000000;
     height: 2px;
     width: 18px;
     display: block;
-    
+    position: relative;
+    text-align: center;
+    cursor: pointer;
 }
 
-.menu-icon::before, .menu-icon::after {
+.nav-icon::before, .nav-icon::after {
     position: absolute;
     content: "";
     background: #000000;
@@ -91,23 +88,30 @@ nav ul li > .nav__item-submenu {
     width: 18px;
 }
 
-.menu-icon::before {
+.nav-icon::before {
     top: 5px;
 }
 
-.menu-icon::after {
+.nav-icon::after {
     top: -5px;
 }
 
-.menu-btn {
-    display: none;
+#menu-btn:checked~.menu-icon .nav-icon {
+    background: transparent;
 }
 
-.menu-btn:checked ~ .nav {
-    display: flex;
-    flex-direction: column;
-} 
+#menu-btn:checked~.menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+}
 
+#menu-btn:checked~.menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+}
 
+#menu-btn:checked~.menu-icon:not(.steps) .nav-icon::before, #menu-btn:checked~.menu-icon:not(.steps) .nav-icon::before {
+    top: -5px;
+}
 
-                        
+#menu-btn, .nav-icon {
+    display: none;
+}
