@@ -1,1 +1,1 @@
-Car auction frontend project for EPAM KPI
+Car auction frontend project FE/JS Winter KPI
