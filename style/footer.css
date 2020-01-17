@@ -10,7 +10,8 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
-    padding: 30px;
+    padding: 10px;
+    margin: 20px;
 }
 
 .footer__phone, .footer__mail, .footer__address {

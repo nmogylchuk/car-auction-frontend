@@ -1,5 +1,8 @@
 /* user registration form  */
-
+body {
+    background-image: url("/img/slider/slider_photo1.jpeg");
+}
+ 
 .registration__form {
     width: 100%;
     margin: 30px auto;
