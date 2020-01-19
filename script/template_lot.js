@@ -1,10 +1,48 @@
 const lotsData = loadLotsData();
+const carLotsOnPage = 3;
+let activeAuctionLot;
 
 loadLots();
 
 function loadLots() {
-    document.getElementById("auction__lots").innerHTML = `${lotsData.map(loadLotTemplate).join('')}`;
+    let pagination = document.querySelector('#pagination__numbers');
+    pagination.style.display = 'flex';
+    pagination.innerHTML = '';
+
+    let countOfCarLots = Math.ceil(lotsData.length / carLotsOnPage);
+    for (let i = 1; i <= countOfCarLots; i++) {
+        let paginationPageNumber = document.createElement('a');
+        paginationPageNumber.setAttribute('href', '#');
+        paginationPageNumber.innerHTML = i;
+
+        paginationPageNumber.addEventListener('click', function (evt) {
+            showActiveAuctionLotPage(this);
+            evt.preventDefault();
+        });
+
+        if (i == 1) {
+            showActiveAuctionLotPage(paginationPageNumber);
+        }
+
+        pagination.appendChild(paginationPageNumber);
+    }
+    return false;
 };
+
+function showActiveAuctionLotPage(carLot) {
+    if (activeAuctionLot) {
+        activeAuctionLot.classList.remove('active');
+    }
+    activeAuctionLot = carLot;
+    carLot.classList.add('active');
+    let pageNum = +carLot.innerHTML;
+
+    let start = (pageNum - 1) * carLotsOnPage;
+    let end = start + carLotsOnPage;
+    let caLotsOnCurrentPage = lotsData.slice(start, end);
+
+    document.getElementById("auction__lots").innerHTML = `${caLotsOnCurrentPage.map(loadLotTemplate).join('')}`;
+}
 
 function loadLotTemplate(lot) {
     return `

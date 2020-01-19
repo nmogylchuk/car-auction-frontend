@@ -17,6 +17,9 @@ function buildSearchOption(value) {
 };
 
 function searchLots() {
+  let pagination = document.getElementById('pagination__numbers');
+  pagination.style.display = 'none';
+
   var brand = document.getElementById("brand");
   var chosenBrand = brand.options[brand.selectedIndex].value;
 
