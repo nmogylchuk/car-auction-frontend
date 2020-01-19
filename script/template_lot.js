@@ -1,5 +1,5 @@
 const lotsData = loadLotsData();
-const carLotsOnPage = 3;
+const carLotsOnPage = 4;
 let activeAuctionLot;
 
 loadLots();

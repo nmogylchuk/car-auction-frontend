@@ -30,6 +30,7 @@
             <nav>
                 <input type="checkbox" id="menu-btn" class="menu-btn"></input>
                 <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+
                 <ul class="nav">
                     <li class="nav__item">
                         <a href="#advantages__title">Наші переваги</a>
@@ -40,6 +41,7 @@
                             <li><a href="#" class="nav__item-link">Submenu1</a></li>
                         </ul>
                     </li>
+
                     <li class="devider"></li>
 
                     <li class="nav__item">
@@ -50,6 +52,7 @@
                             <li><a href="#" class="nav__item-link">Submenu1</a></li>
                         </ul>
                     </li>
+
                     <li class="devider"></li>
 
                     <li class="nav__item">
@@ -60,6 +63,7 @@
                             <li><a href="#" class="nav__item-link">Submenu1</a></li>
                         </ul>
                     </li>
+
                     <li class="devider"></li>
 
                     <li class="nav__item">
@@ -70,48 +74,51 @@
                             <li><a href="#" class="nav__item-link">Submenu1</a></li>
                         </ul>
                     </li>
+
                     <li class="devider"></li>
 
                     <li class="nav__item">
                         <a href="#footer__contacts">Контакти</a>
-                        <ul class="nav__item-submenu">
-                            <li><a href="#map" class="nav__item-link">Як нас знайти?</a></li>
-                        </ul>
                     </li>
                 </ul>
-
             </nav>
-
         </div>
     </header>
 
     <main>
         <!-- Slider -->
         <section>
-            <div class="slider">
-                <figure>
-                    <div class="slider__image">
-                        <img src="img/slider/slider_photo1.jpeg" alt="slider1">
-                        <a href=""></a>
-                    </div>
-                    <div class="slider__image">
-                        <img src="img/slider/slider_photo2.jpg" alt="slider2">
-                        <a href=""></a>
-                    </div>
-                    <div class=" slider__image">
-                        <img src="img/slider/slider_photo3.jpg" alt="slider3">
-                        <a href=""></a>
-                    </div>
-                    <div class=" slider__image">
-                        <img src="img/slider/slider_photo4.jpeg" alt="slider4">
-                        <a href=""></a>
-                    </div>
-                    <div class="slider__image">
-                        <img src="img/slider/slider_photo1.jpeg" alt="slider5">
-                        <a href=""></a>
-                    </div>
-                </figure>
-            </div>
+            <figure class="slider">
+                <div class="slider__image">
+                    <img src="img/slider/slider_photo1.jpeg" style="width: 100%" alt="slider1">
+                    <a href=""></a>
+                </div>
+                <div class="slider__image">
+                    <img src="img/slider/slider_photo2.jpg" style="width: 100%" alt="slider2">
+                    <a href=""></a>
+                </div>
+                <div class="slider__image">
+                    <img src="img/slider/slider_photo3.jpg" style="width: 100%" alt="slider3">
+                    <a href=""></a>
+                </div>
+                <div class="slider__image">
+                    <img src="img/slider/slider_photo4.jpeg" style="width: 100%" alt="slider4">
+                    <a href=""></a>
+                </div>
+                <div class="slider__image">
+                    <img src="img/slider/slider_photo1.jpeg" style="width: 100%" alt="slider1">
+                    <a href=""></a>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                <a class="next" onclick="plusSlides(1)">&#10095</a>
+                <div style="text-align: center;">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+            </figure>
         </section>
 
         <!-- Advantages -->
@@ -262,7 +269,7 @@
     <script type="text/javascript" src="script/main.js"></script>
     <script type="text/javascript" src="script/data_advantages.js"></script>
     <script type="text/javascript" src="script/template_advantage.js"></script>
-
+    <script type="text/javascript" src="script/slider_main.js"></script>
     <script type="text/javascript" src="script/data_partners.js"></script>
     <script type="text/javascript" src="script/template_partner.js"></script>
 

@@ -27,6 +27,7 @@
   width: 100%;
   max-width: 940px;
   border: 1px solid rgba(0, 0, 0, 0.8);
+  position: relative;
 }
 
 /* Previous and next buttons */
@@ -35,27 +36,29 @@
   cursor: pointer;
   position: absolute;
   top: 37%;
-  width: auto;
-  padding: 1.2em;
+  padding: 1em 1.3em;
   color: #ffffff;
   font-weight: bold;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  margin: 0 10px;
+  background: rgba(205, 214, 219, 0.3);
 }
 
-.lot__slider-next {
-  border-radius: 0 10px 10px 0;
+.lot__slider-prev {
+  left: 0;
 }
 
 .lot__slider-next {
   right: 0;
-  border-radius: 10px 0 0 10px;
 }
 
 .lot__slider-prev:hover, .lot__slider-next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(80, 71, 71, 0.8);
 }
 
 .lot__slider-prev:focus, .lot__slider-next:focus {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(80, 71, 71, 0.8);
 }
 
 /* Numbers (1/6 ...) */
@@ -117,12 +120,10 @@
 }
 
 .lot__bid-price, .lot__bid-current, .lot__bid-end, .lot__bid-fee {
-padding: 10px;
+  padding: 10px;
 }
 
-.lot__bid-information[type="submit"] {
-
-}
+.lot__bid-information[type="submit"] {}
 
 /* Lot description */
 

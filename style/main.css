@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,500,600,700&display=swap');
+
 @font-face {
     font-family: 'Roboto', sans-serif;
     scr: url(../fonts/Roboto/Roboto-Bold.ttf) format("truetype");
     scr: url(../fonts/Roboto/Roboto-Italic.ttf) format("truetype");
     scr: url(../fonts/Roboto/Roboto-Light.ttf) format("truetype");
     scr: url(../fonts/Roboto/Roboto-Medium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'Dancing Script', cursive;
+    scr: url(../fonts/DancingScript/DancingScript-VariableFont_wght.ttf) format("truetype");
+
 }
 
 * {
@@ -21,6 +29,7 @@ body {
 /* search button */
 
 #search__title {
+    font-family: 'Dancing Script', cursive;
     font-size: 2.5em;
     color: #2c343c;
     text-align: center;
@@ -70,12 +79,12 @@ form.search #brand, form.search #model, form.search #year, form.search #gearbox,
 
 form.search button:hover {
     background: #006400;
-    font-size: 1.25em;
 }
 
 /* advantages */
 
 #advantages__title {
+    font-family: 'Dancing Script', cursive;
     font-size: 2.5em;
     color: #2c343c;
     text-align: center;
@@ -91,6 +100,7 @@ form.search button:hover {
 }
 
 .advantages__details {
+    font-family: 'Dancing Script', cursive;
     padding: 10px;
     margin: 20px;
     text-align: center;
@@ -130,6 +140,7 @@ form.search button:hover {
 /*auction */
 
 #auction__title {
+    font-family: 'Dancing Script', cursive;
     font-size: 2.5em;
     color: #2c343c;
     text-align: center;
@@ -205,15 +216,18 @@ input[type="submit"]:hover, input[type="reset"]:hover {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    text-align: center;
-    width: 100%;
-    margin: 30px auto;
+    margin: 20px auto;
 }
 
-#pagination__numbers a {
+#pagination__numbers li {
+    color: #000000;
+    list-style-type: none;
+    margin: 0 5px;
+}
+
+#pagination__numbers li a {
     color: #000000;
     padding: 10px 20px;
-    margin: 20px;
     text-decoration: none;
 }
 
@@ -243,6 +257,7 @@ input[type="submit"]:hover, input[type="reset"]:hover {
 }
 
 #team__title {
+    font-family: 'Dancing Script', cursive;
     font-size: 2.5em;
     color: #2c343c;
     text-align: center;
@@ -307,6 +322,7 @@ input[type="submit"]:hover, input[type="reset"]:hover {
 /* partners */
 
 #partner__title {
+    font-family: 'Dancing Script', cursive;
     font-size: 2.5em;
     color: #2c343c;
     text-align: center;
@@ -333,6 +349,7 @@ input[type="submit"]:hover, input[type="reset"]:hover {
 /* form  */
 
 #form__title {
+    font-family: 'Dancing Script', cursive;
     font-size: 2.5em;
     color: #2c343c;
     text-align: center;
@@ -380,47 +397,62 @@ form.contact input[type="submit"], input[type="reset"] {
 
 /* slider */
 
-.slider {
-    overflow: hidden;
+
+slider {
+    width: 100%;
+    margin: auto;
+    position: relative;
+	overflow: hidden;
 }
 
-.slider figure {
-    width: 500%;
-    left: 0;
-    margin: 0;
-    animation: 20s slider infinite;
+.slider__image img {
+    position: relative;
+    height: 100%;
+    width: 100%;
 }
 
-.slider figure img {
-    width: 20%;
-    float: left;
+/* Previous and next buttons */
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 1em 1.4em;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    margin: auto;
+    background: rgba(205, 214, 219, 0.3);
 }
 
-@keyframes slider {
-    0% {
-        left: 0;
-    }
-    20% {
-        left: 0;
-    }
-    25% {
-        left: -100%;
-    }
-    45% {
-        left: -100%;
-    }
-    50% {
-        left: -200%;
-    }
-    70% {
-        left: -200%;
-    }
-    90% {
-        left: -300%;
-    }
-    100% {
-        left: -400%;
-    }
+.prev {
+    left: 1%;
+}
+
+.next {
+    right: 1%;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(80, 71, 71, 0.8);
+}
+
+/* Dots buttons */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 10px 5px;
+    background: rgb(236, 236, 233);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color: 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #00cd00;
 }
 
 /* map */
