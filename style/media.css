@@ -39,7 +39,8 @@
     .nav-icon {
         display: block;
         position: absolute;
-        top: -20px;
+        top: -18px;
+        margin: 0 10px;
         right: 0;
     }
     .lot__information {
@@ -48,11 +49,7 @@
     .lot__slider {
         width: 100%;
     }
-    .lot__details {
-        text-align: center;
-        margin: 0;
-    }
-    .lot__bid-information {
+    .lot__details, .lot__bid-information {
         text-align: center;
         margin: 0;
     }
@@ -84,21 +81,14 @@
         font-size: 0.8em;
     }
     .lot__information {
-        margin: 0;
-    }
-    .lot__information {
         flex-direction: column;
     }
     .lot__slider {
         width: 100%;
-    }
-    .lot__details {
-        text-align: center;
         margin: 0;
     }
-    .lot__bid-information {
+    .lot__details, .lot__bid-information {
         text-align: center;
-        margin: 0;
     }
     .auction__item-block {
         flex-wrap: wrap;

@@ -17,7 +17,7 @@ function buildSearchOption(value) {
 };
 
 function searchLots() {
-  let pagination = document.getElementById('pagination__numbers');
+  let pagination = document.getElementById('pagination');
   pagination.style.display = 'none';
 
   var brand = document.getElementById("brand");

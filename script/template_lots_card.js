@@ -43,6 +43,8 @@ function loadCurrentLot() {
           <h2>Інформація по ставці</h2>
           <p class="lot__bid-start">Стартова ціна:</p>
           <p class="lot__bid-current">Поточна ціна:</p>
+          <p class="lot__bid-end">Аукціон закінчується:</p>
+          <p class="lot__bid-сount">Зроблено ставок:</p>
           <input class="lot__bid-fee" type="submit" value="Зробити ставку">
         </div>
       </div>

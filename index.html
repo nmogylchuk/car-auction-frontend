@@ -8,10 +8,11 @@
         content="Пропонуємо великий модельний ряд авто, надійність, чесність, безпеку, сервісну підтримку 24/7. Заходьте та обирайте свою улюблену модель. Станьте на крок ближче до своєї мрії. 067 224 43 75.">
     <meta name="keywords" content="car, кар, аукціон, онлайн-аукціон">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="robots" content="index, follow">
-    <link rel="stylesheet" type="text/css" href="style/main.css">
     <link rel="stylesheet" type="text/css" href="style/header.css">
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <link rel="stylesheet" type="text/css" href="style/lots.css">
     <link rel="stylesheet" type="text/css" href="style/footer.css">
     <link rel="stylesheet" type="text/css" href="style/media.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
@@ -28,7 +29,7 @@
             </a>
 
             <nav>
-                <input type="checkbox" id="menu-btn" class="menu-btn"></input>
+                <input type="checkbox" id="menu-btn" class="menu-btn">
                 <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
 
                 <ul class="nav">
@@ -86,7 +87,9 @@
     </header>
 
     <main>
+
         <!-- Slider -->
+
         <section>
             <figure class="slider">
                 <div class="slider__image">
@@ -150,22 +153,18 @@
 
         <section>
             <h2 id="auction__title">Поточні аукціони</h2>
-            <div id="auction__lots" />
+            <div id="auction__lots"></div>
         </section>
 
         <!-- Pagination -->
-        <section>
-            <div id="pagination">
-                <ul id="pagination__numbers">
-                </ul>
-            </div>
-        </section>
+
+        <section id="pagination"></section>
 
         <!-- Team -->
 
         <section>
             <h2 id="team__title">Наша команда</h2>
-            <div class="team" />
+            <div class="team"></div>
         </section>
 
         <!-- Partnerts -->
@@ -219,7 +218,7 @@
                 <textarea id="message" name="message" rows="5" cols="30" maxlength="1000"></textarea>
 
                 <label for="data">Я погоджуюся на обробку персональних даних.</label>
-                <input id="data" type="checkbox" id="personal-data" checked required>
+                <input id="data" type="checkbox" checked required>
             </fieldset>
 
             <input type="submit" value="Підтвердити">
@@ -229,11 +228,14 @@
 
         <!-- Map -->
 
-        <section id="map">
-            <iframe
+        <section>
+            <h2 id="map__title">Як нас знайти?</h2>
+            <div id="map">
+            <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.1905986436523!2d30.619127916026933!3d50.437550379473635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c568143feba1%3A0x81deed3e317d95af!2z0JrQvtC80YTQvtGA0YIg0KLQsNGD0L0!5e0!3m2!1sru!2sua!4v1573592954615!5m2!1sru!2sua"
                 allowfullscreen="">
             </iframe>
+        </div>
         </section>
     </main>
 

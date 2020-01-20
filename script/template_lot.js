@@ -5,7 +5,7 @@ let activeAuctionLot;
 loadLots();
 
 function loadLots() {
-    let pagination = document.querySelector('#pagination__numbers');
+    let pagination = document.querySelector('#pagination');
     pagination.style.display = 'flex';
     pagination.innerHTML = '';
 
