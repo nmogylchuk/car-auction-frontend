@@ -1,9 +1,21 @@
-
 .lot__information {
   display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
   justify-content: space-around;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
   flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   margin: 0 10px;
 }
 
@@ -34,6 +46,9 @@
   color: #ffffff;
   font-weight: bold;
   border-radius: 50%;
+  -o-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
   border: 2px solid #ffffff;
   margin: 0 10px;
   background: rgba(205, 214, 219, 0.3);
@@ -67,13 +82,23 @@
   z-index: 3;
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 12px;
+  -o-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
 }
 
 /* Mini size images */
 
 .lot__slider-mini {
   display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   justify-content: space-between;
+  -webkit-box-pack: space-between;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: space-between;
   margin: 10px 0;
 }
 
@@ -83,11 +108,13 @@
 
 .lotSliderMiniItem {
   opacity: 0.6;
+  -webkit-filter: opacity(0.6);
   cursor: pointer;
 }
 
 .active, .lotSliderMiniItem:hover {
   opacity: 1;
+  -webkit-filter: opacity(1);
   border: 1px solid rgba(0, 0, 0, 0.8);
 }
 
@@ -124,8 +151,17 @@
 
 .lot__description {
   display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   justify-content: space-around;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
   flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
   margin: auto;
 }
 

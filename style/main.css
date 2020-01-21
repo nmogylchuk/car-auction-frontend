@@ -10,6 +10,7 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -30,8 +31,17 @@ body {
 
 form.search {
     display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
     justify-content: space-around;
+    -webkit-box-pack: space-around;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: space-around;
     width: 70%;
     margin: 20px auto;
     padding: 10px;
@@ -53,9 +63,22 @@ form.search #brand, form.search #model, form.search #year, form.search #gearbox,
 
 .search__buttons {
     display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     justify-content: space-around;
+    -webkit-box-pack: space-around;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: space-around;
     flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
     flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
 }
 
 .search__buttons [type="submit"], .search__buttons [type="reset"] {
@@ -86,8 +109,17 @@ form.search button:hover {
 
 .advantages {
     display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     justify-content: space-around;
+    -webkit-box-pack: space-around;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: space-around;
     flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
     margin: 20px;
 }
 
@@ -140,8 +172,17 @@ form.search button:hover {
 
 #auction__lots {
     display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     justify-content: space-around;
+    -webkit-box-pack: space-around;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: space-around;
     flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
     background: #e9e9e9;
     overflow-y: scroll;
     height: 530px;
@@ -149,9 +190,21 @@ form.search button:hover {
 
 .auction__item {
     display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
     justify-content: space-between;
+    -webkit-box-pack: space-between;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: space-between;
     flex-direction: row;
+    -webkit-box-pack: space-between;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: space-between;
     background: #ffffff;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, .1);
     border: #2c343c;
@@ -166,8 +219,17 @@ form.search button:hover {
 
 .auction__item-block {
     display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
     justify-content: space-around;
+    -webkit-box-pack: space-around;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: space-around;
 }
 
 .auction__item-block img {
@@ -189,6 +251,9 @@ input[type="submit"], input[type="reset"] {
     width: 100%;
     box-shadow: 1px 5px 10px -5px #006400;
     transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
     margin: 5px 0;
 }
 
@@ -206,8 +271,17 @@ input[type="submit"]:hover, input[type="reset"]:hover {
 
 #pagination {
     display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
     justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
 }
 
 #pagination a {
@@ -224,6 +298,9 @@ input[type="submit"]:hover, input[type="reset"]:hover {
     cursor: pointer;
     box-shadow: 1px 5px 10px -5px #006400;
     transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
 }
 
 #pagination a:hover:not(.active) {
@@ -235,8 +312,17 @@ input[type="submit"]:hover, input[type="reset"]:hover {
 
 .team {
     display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     justify-content: space-around;
+    -webkit-box-pack: space-around;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: space-around;
     flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
     margin: 20p;
     padding: 10px;
     text-align: center;
@@ -251,6 +337,9 @@ input[type="submit"]:hover, input[type="reset"]:hover {
 }
 
 .team__photo {
+    -o-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
     border-radius: 50%;
     width: 100%;
 }
@@ -314,8 +403,17 @@ input[type="submit"]:hover, input[type="reset"]:hover {
 
 .partner__logos {
     display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
     justify-content: space-around;
+    -webkit-box-pack: space-around;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: space-around;
     background: #e9e9e9;
 }
 
@@ -400,6 +498,9 @@ slider {
     color: #ffffff;
     font-weight: bold;
     border-radius: 50%;
+    -o-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
     border: 2px solid #ffffff;
     margin: auto;
     background: rgba(205, 214, 219, 0.3);
@@ -426,6 +527,9 @@ slider {
     margin: 10px 5px;
     background: rgb(236, 236, 233);
     border-radius: 50%;
+    -o-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
     display: inline-block;
 }
 
@@ -440,10 +544,12 @@ slider {
     padding: 20%;
     position: relative;
     opacity: 0.5;
+    -webkit-filter: opacity(0.5);
 }
 
 #map:hover {
     opacity: 1;
+    -webkit-filter: opacity(1);
     box-shadow: 1px 5px 10px -5px #2c343c;
 }
 
