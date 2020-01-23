@@ -81,6 +81,12 @@
                     <li class="nav__item">
                         <a href="#footer__contacts">Контакти</a>
                     </li>
+
+                    <li class="devider"></li>
+
+                    <li class="nav__item">
+                        <a href="registration_form.html"><i class="far fa-user"></i></a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -136,23 +142,22 @@
 
         <!-- Search button -->
 
-        <form class="search" action="#" method="get">
-            <select id="brand" name="brand" size="3" multiple></select>
-            <select id="year" name="year" size="3" multiple></select>
-            <select id="gearbox" name="gearbox" size="3" multiple></select>
-            <select id="engine" name="engine" size="3" multiple></select>
-            <div class="search__buttons">
-                <button type="submit" onclick="return searchLots();">
-                    <i class="fa fa-search"></i>
-                </button>
-                <input type="reset" onclick="return loadLots();" value="Скинути">
-            </div>
-        </form>
-
-        <!-- Auction -->
-
         <section>
             <h2 id="auction__title">Поточні аукціони</h2>
+            <form class="search" action="#" method="get">
+                <select id="brand" name="brand" size="3" multiple></select>
+                <select id="year" name="year" size="3" multiple></select>
+                <select id="gearbox" name="gearbox" size="3" multiple></select>
+                <select id="engine" name="engine" size="3" multiple></select>
+                <div class="search__buttons">
+                    <button type="submit" onclick="return searchLots();">
+                        <i class="fa fa-search"></i>
+                    </button>
+                    <input type="reset" onclick="return loadLots();" value="Скинути">
+                </div>
+            </form>
+
+            <!-- Auction -->
             <div id="auction__lots"></div>
         </section>
 
@@ -231,11 +236,11 @@
         <section>
             <h2 id="map__title">Як нас знайти?</h2>
             <div id="map">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.1905986436523!2d30.619127916026933!3d50.437550379473635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c568143feba1%3A0x81deed3e317d95af!2z0JrQvtC80YTQvtGA0YIg0KLQsNGD0L0!5e0!3m2!1sru!2sua!4v1573592954615!5m2!1sru!2sua"
-                allowfullscreen="">
-            </iframe>
-        </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.1905986436523!2d30.619127916026933!3d50.437550379473635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c568143feba1%3A0x81deed3e317d95af!2z0JrQvtC80YTQvtGA0YIg0KLQsNGD0L0!5e0!3m2!1sru!2sua!4v1573592954615!5m2!1sru!2sua"
+                    allowfullscreen="">
+                </iframe>
+            </div>
         </section>
     </main>
 

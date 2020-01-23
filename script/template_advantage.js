@@ -3,7 +3,8 @@ const advantagesData = loadAdvantagesData();
 loadAdvantages();
 
 function loadAdvantages() {
-    document.getElementsByClassName("advantages ")[0].innerHTML = `${advantagesData.map(loadAdvantageTemplate).join('')}`;
+    let advantagesElemets = `${advantagesData.map(loadAdvantageTemplate).join('')}`;
+    document.getElementsByClassName("advantages ")[0].innerHTML = advantagesElemets;
 };
 
 function loadAdvantageTemplate(advantage) {
