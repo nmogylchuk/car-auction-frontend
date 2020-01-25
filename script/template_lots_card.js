@@ -1,5 +1,9 @@
+var activelot;
+const bitPrice = 50;
+
 function loadCurrentLot() {
   var lot = JSON.parse(localStorage.getItem("currentLot"));
+  activelot = lot;
   var imgSrcText = getImgSrcText(lot.images);
   var imgDivText = getImgDivText(lot.images);
   var interierLiText = getLiText(lot.interier);
@@ -41,11 +45,12 @@ function loadCurrentLot() {
 
         <div class="lot__bid-information">
           <h2>Інформація по ставці</h2>
-          <p class="lot__bid-start">Стартова ціна:</p>
-          <p class="lot__bid-current">Поточна ціна:</p>
-          <p class="lot__bid-end">Аукціон закінчується:</p>
-          <p class="lot__bid-сount">Зроблено ставок:</p>
-          <input class="lot__bid-fee" type="submit" value="Зробити ставку">
+          <p class="lot__bid-start">Стартова ціна: <i id="lot_start_price" "lot__bid-start">${lot.price} ${lot.currency}</i></p>
+          <p class="lot__bid-current">Поточна ціна: <i id="lot_current_price" "lot__bid-current">${lot.currentPrice} ${lot.currency}</i></p>
+          <p class="lot__bid-end">Аукціон закінчується: <i id="lot_end_date" class="lot__bid-end">${lot.auctionEndDate}</i></p>
+          <p class="lot__bid-price">Крок ставки: <i id="lot_bit_price" class="lot__bid-price">${bitPrice}</i></p>
+          <p class="lot__bid-сount">Зроблено ставок: <i id="lot_bit_count" class="lot__bid-сount">${lot.auctionCountBits}</i></p>
+          <input class="lot__bid-fee" type="submit" onclick="return makeBit();" value="Зробити ставку">
         </div>
       </div>
     </section>
@@ -121,4 +126,14 @@ loadCurrentLotData()
 
 function loadCurrentLotData() {
   document.getElementById("lot__fullinformation").innerHTML = `${loadCurrentLot()}`
+}
+
+function makeBit() {
+  activelot.currentPrice = activelot.currentPrice + 50;
+  document.getElementById("lot_current_price").innerHTML = activelot.currentPrice;
+
+  activelot.auctionCountBits = activelot.auctionCountBits + 1;
+  document.getElementById("lot_bit_count").innerHTML = activelot.auctionCountBits
+
+  localStorage.setItem("currentLot", JSON.stringify(activelot));
 }

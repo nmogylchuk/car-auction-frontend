@@ -56,3 +56,25 @@ function linkToChosenLot(lotId) {
   localStorage.setItem("currentLot", JSON.stringify(lot));
   window.location.href = 'lots_card.html';
 };
+
+function clearSearch() {
+  //clear pagination sector
+  let paginationSection = document.querySelector('#pagination');
+  paginationSection.style.display = 'flex';
+
+  //clear chosen options
+  var brand = document.getElementById("brand");
+  brand.options[brand.selectedIndex].selected = false;
+
+  var year = document.getElementById("year");
+  year.options[year.selectedIndex].selected = false;
+
+  var gearbox = document.getElementById("gearbox");
+  gearbox.options[gearbox.selectedIndex].selected = false;
+
+  var engine = document.getElementById("engine");
+  engine.options[engine.selectedIndex].selected = false;
+
+  loadCarLotsWithPagination();
+  return false;
+}

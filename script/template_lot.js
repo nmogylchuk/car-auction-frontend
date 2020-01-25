@@ -1,47 +1,47 @@
 const lotsData = loadLotsData();
 const carLotsOnPage = 4;
-let activeAuctionLot;
+let activePaginationPage;
 
-loadLots();
+loadCarLotsWithPagination();
 
-function loadLots() {
-    let pagination = document.querySelector('#pagination');
-    pagination.style.display = 'flex';
-    pagination.innerHTML = '';
+function loadCarLotsWithPagination() {
+    let paginationSection = document.querySelector('#pagination');
+    paginationSection.style.display = 'flex';
+    paginationSection.innerHTML = '';
+    
+    let countOfPaginationPages = Math.ceil(lotsData.length / carLotsOnPage);
+    for (let i = 1; i <= countOfPaginationPages; i++) {
+        let paginationPage = document.createElement('a');
+        paginationPage.setAttribute('href', '#');
+        paginationPage.innerHTML = i;
 
-    let countOfCarLots = Math.ceil(lotsData.length / carLotsOnPage);
-    for (let i = 1; i <= countOfCarLots; i++) {
-        let paginationPageNumber = document.createElement('a');
-        paginationPageNumber.setAttribute('href', '#');
-        paginationPageNumber.innerHTML = i;
-
-        paginationPageNumber.addEventListener('click', function (evt) {
+        paginationPage.addEventListener('click', function (evt) {
             showActiveAuctionLotPage(this);
             evt.preventDefault();
         });
 
         if (i == 1) {
-            showActiveAuctionLotPage(paginationPageNumber);
+            showActiveAuctionLotPage(paginationPage);
         }
 
-        pagination.appendChild(paginationPageNumber);
+        paginationSection.appendChild(paginationPage);
     }
     return false;
 };
 
-function showActiveAuctionLotPage(carLot) {
-    if (activeAuctionLot) {
-        activeAuctionLot.classList.remove('active');
+function showActiveAuctionLotPage(paginationPage) {
+    if (activePaginationPage) {
+        activePaginationPage.classList.remove('active');
     }
-    activeAuctionLot = carLot;
-    carLot.classList.add('active');
-    let pageNum = +carLot.innerHTML;
+    activePaginationPage = paginationPage;
+    paginationPage.classList.add('active');
+    let pageNum = +paginationPage.innerHTML;
 
     let start = (pageNum - 1) * carLotsOnPage;
     let end = start + carLotsOnPage;
-    let caLotsOnCurrentPage = lotsData.slice(start, end);
+    let carLotsOnCurrentPage = lotsData.slice(start, end);
 
-    document.getElementById("auction__lots").innerHTML = `${caLotsOnCurrentPage.map(loadLotTemplate).join('')}`;
+    document.getElementById("auction__lots").innerHTML = `${carLotsOnCurrentPage.map(loadLotTemplate).join('')}`;
 }
 
 function loadLotTemplate(lot) {
