@@ -1,1 +1,1 @@
-Car auction frontend project FE/JS Winter KPI
+Car auction frontend project FE/JS Winter KPI - https://nmogylchuk.github.io/car-auction-frontend/
