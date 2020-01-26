@@ -70,7 +70,15 @@
 
 /* Small Devices, Tablets */
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+    form.search {
+        width: 100%;
+        justify-content: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+    }
+}
 
 /* Extra Small Devices, Phones */
 
